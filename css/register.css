@@ -1,0 +1,89 @@
+
+body {
+    background-color: #a79b3f;
+}
+
+.container-login100 {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+}
+
+.error-message {
+    color: #DC143C;
+}
+
+.error-icon {
+    color: #DC143C;
+    margin-right: 5px;
+}
+
+.social-icons {
+    text-align: justify;
+    margin-top: 12px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+    text-align: center;
+    color: white;
+}
+
+.social-icon.twitter {
+    background-color: #1da1f2;
+    text-align: center;
+    color: white;
+}
+
+.social-icon.google {
+    background-color: #ea4335;
+    text-align: center;
+    color: white;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.toggle-password {
+    font-size: 18px;
+    color: #33a045;
+}
+
+.toggle-password:hover {
+    color: #c43131;
+}
+
+  
+
+
+
+

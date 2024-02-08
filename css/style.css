@@ -1,0 +1,288 @@
+ /* Define a style for the block-13 container */
+.site-section.block-13 {
+    position: relative;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+/* Set the background image properties */
+.site-section.block-13.bg-image {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style the text inside the container */
+.site-section.block-13 .container {
+    position: relative;
+    z-index: 2;
+}
+
+.site-section.block-13 h2 {
+    font-size: 2.5em;
+    color: #b15190;
+}
+
+/* Style the owl-carousel */
+.site-section.block-13 .nonloop-block-13.owl-carousel {
+    margin-top: 30px; /* Adjust margin as needed */
+}
+
+/* Style the individual items within the carousel */
+.site-section.block-13 .item {
+    margin: 0 10px;
+}
+
+/* Style the block-12 container */
+.site-section.block-13 .block-12 {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.site-section.block-13 img {
+    max-width: 100%;
+    border-radius: 8px; 
+}
+
+.site-section.block-13 .meta {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.site-section.block-13 h2.heading {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.site-section.block-13 p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Add hover effect to links */
+.site-section.block-13 a {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.site-section.block-13 a:hover {
+    color: #ff6600; /* Change the color on hover */
+} 
+/* for hover */
+
+
+/* CSS for the block */
+.block-12 {
+    position: relative;
+    overflow: hidden;
+}
+
+/* CSS for the zoom effect on hover */
+.block-12 img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.block-12:hover img {
+    transform: scale(1.2);
+}
+
+/* CSS for the text outside the image */
+.block-12 .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(133, 144, 78, 0.7); /* Background color for better readability */
+    padding: 10px;
+    color: #281497;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+ .block-12:hover .text {
+    opacity: 1;
+} 
+
+/* for news */
+
+
+.post-entry {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.post-entry:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.post-entry .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.post-entry img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-entry:hover img {
+    transform: scale(1.1);
+}
+
+.post-entry .text {
+    padding: 20px;
+}
+
+.post-entry h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.post-entry .date {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.post-entry p {
+    margin: 0;
+}
+
+
+.post-entry a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-entry a:hover {
+    text-decoration: underline;
+}
+
+/* style for games */
+
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Add a zoom-in effect on hover */
+}
+
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+.card-text {
+    color: #555;
+}
+
+
+.btn-primary {
+    background-color: #007bff; 
+    border-color: #007bff; 
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+    border-color: #0056b3; 
+    color: #fff; 
+}
+
+/* styling css for navbar */
+
+/* CSS for the navbar */
+.navbar {
+    background-color: #8da55b; 
+    padding: 15px 0; 
+   font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-brand {
+    color: #ffffff !important; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; 
+    font-weight: 500; 
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a73b83 !important; 
+}
+
+/* CSS for the dropdown menu */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #ffffff30;
+   
+}
+
+.dropdown-menu {
+    background-color: #343a40; 
+    border: none; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+   
+}
+
+.dropdown-item {
+    color: #85a77f !important; 
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background-color: #007bff; 
+   font-style: oblique;
+   border-radius: 0.25rem; 
+   margin-top: 0.5rem;
+   font-size: 25px;
+  color: #579a75 !important; 
+}
+
+.navbar form {
+    margin-left: auto;
+}
+
+.form-control {
+    border-color: #ffffff;
+    color: #ffffff; 
+    background-color: transparent; 
+}
+
+.btn-outline-success {
+    border-color: #ffffff; 
+    color: #ffffff; 
+}
+
+.btn-outline-success:hover {
+    background-color: #007bff; 
+    border-color: #007bff; 
+    color: #ffffff; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
