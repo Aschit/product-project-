@@ -1,7 +1,7 @@
 <!-- header section starts -->
 <header class="header">
     <section class="flex">
-    <a href="main.php" class="logo">Olyampics</a>
+    <a href="main.php" class="logo"> Payris Fun Olyampics 2024.</a>
         <div class="icons">
             <div id="user-btn" class="fas fa-user"></div>
         </div>

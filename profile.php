@@ -14,7 +14,7 @@ else
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>FunOlympic</title>
+    <title> payris FunOlympic2024</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -26,6 +26,7 @@ else
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 <style>
         body {
         background-color: pink;
@@ -96,7 +97,7 @@ else
 
     </style>
 
-       
+        
 
 
     
@@ -106,7 +107,7 @@ else
     <header id="header" class="header d-flex align-items-center">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="home.php" class="logo d-flex align-items-center">
-                <h1>OLyampics<span>.</span></h1>
+                <h1> payris OLyampics<span>.</span></h1>
               
             
 
@@ -138,20 +139,19 @@ else
 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                     <h4>Contact Us</h4>
                     <p>
-                        A108 Adam Street <br> City of Yokyo, 1 no 2 no 6<br> Japan <br><br>
-                        <strong>Phone:</strong> +1-123-456-7890<br>
-                        <strong>Email:</strong> info@yokyo-funolympic.com<br>
+                        Payris <br> City of Payris, 1<br> Paris <br><br>
+                        <strong>Phone:</strong> +1-123-456-7899<br>
+                        <strong>Email:</strong> info@FunOlympic2024.com<br>
                     </p>
 
                 </div>
 
         <div class="container mt-4">
             <div class="copyright">
-                &copy; 2023 Copyright <strong><span>FunOlympic Yokyo</span></strong>. All Rights Reserved
+                &copy; 2024 Copyright <strong><span>FunOlympic2024 Payris</span></strong>. All Rights Reserved
             </div>
 
-            <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-                    class="bi bi-arrow-up-short"></i></a>
+          
 
 </html>
 <?php 

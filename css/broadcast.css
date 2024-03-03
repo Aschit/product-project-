@@ -10,7 +10,8 @@ body {
 }
 
 #contact h2 {
-    color: #008374;
+    color: red;
+    background-color: #be6231;
     font-size: 36px;
     font-weight: bold;
     text-align: center;

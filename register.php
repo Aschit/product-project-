@@ -8,7 +8,7 @@
         $email = $_POST["email"];
         $phone_number = $_POST["phone_number"];
         $country = $_POST["country"];
-        $gender = $_POST["gender"];
+        $gender = $_POST["sports"];
         $password = $_POST["password"];
         $role = $_POST["role"];
 
@@ -25,8 +25,8 @@ alert("User with email already exist!");
             }else{
                 $password_hash = password_hash($password, PASSWORD_BCRYPT);
 
-                $result = mysqli_query($conn, "INSERT INTO users (fullname, username, email, phone_number, country, gender, password, role, status) VALUES
-                ('$fullname','$username', '$email','$phone_number', '$country', '$gender', '$password_hash', '$role', 0)");
+                $result = mysqli_query($conn, "INSERT INTO users (fullname, username, email, phone_number, country, sports, password, role, status) VALUES
+                ('$fullname','$username', '$email','$phone_number', '$country', '$sports', '$password_hash', '$role', 0)");
     
                 if($result){
                     $otp = rand(100000,999999);
@@ -91,11 +91,7 @@ window.location.replace('verification.php');
     rel="stylesheet">
 
 <!-- Vendor CSS Files -->
-<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 <!-- js function -->
 <script src="js/main.js"></script>
 <!-- Template Main CSS File -->
@@ -164,14 +160,17 @@ window.location.replace('verification.php');
                         </div>
                     </div>
                     <div class="form-group" style="color: #808080;">
-                        <label for="gender"><strong>Gender *</strong></label>
+                        <label for="gender"><strong>Sports *</strong></label>
                         <div class="input-container">
                             <select id="gender" name="gender" required
                                 style="width: 100%; height: 40px; margin-top: 5px; padding: 5px">
-                                <option value="" selected disabled>Select your Gender</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Other">Other</option>
+                                <option value="" selected disabled>Select your Favorate Sports</option>
+                                <option value="football">Football</option>
+                                <option value="volleyball">Volleyball</option>
+                                <option value="basketball">Basketball</option>
+                                <option value="swimming">swimming</option>
+                                <option value="hockey">Hockey</option>
+                                <option value="others">Others</option>
                             </select>
                         </div>
                     </div>

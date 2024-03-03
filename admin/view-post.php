@@ -16,7 +16,7 @@ else
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunOlympic</title>
+    <title> payris FunOlympic 2024 </title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -60,7 +60,7 @@ else
                     <td scope="row"><?php echo $a; ?></td>
                     <td><?php echo $b; ?></td>
                     <td><?php echo $c; ?></td>
-                    <td><img src="../assets/img/news/<?php echo $d; ?>" width="100px"></td>
+                    <td><img src="../images/news/?php echo $d; ?>" width="100px"></td>
                     <td><a class="btn btn-primary"
                             href="edit.php?id=<?php echo $a; ?>&title=<?php echo $b; ?>&content=<?php echo $c; ?>&image=<?php echo $d; ?>">Edit</a>
                     </td>

@@ -45,9 +45,9 @@
       </div>
       <div class="contact-info">
         <h3>contact info</h3>
-        <p> <i class="fas fa-phone"></i>1233456788</p>
-        <p><i class="fas fa-envelope"></i>info@example.com</p>
-        <p><i class="fas fa-phone"></i>123 street </p>
+        <p> <i class="fas fa-phone"></i>123456789</p>
+        <p><i class="fas fa-envelope"></i>info@payrisfunolyampic2024.com</p>
+        <p><i class="fas fa-phone"></i>Paris </p>
       </div>
     </div>
   </div>
@@ -63,7 +63,7 @@
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
-              copyright @ 2024
+              <a href="home.php">copyright @ 2024</a>
             </p>
           </div>
           
