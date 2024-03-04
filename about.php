@@ -12,9 +12,15 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/loader.css">
     <script src="js/loader.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
   </head>
   <body>
   <div class="loader"></div>
+  
+
 
 <!-- navbar begins -->
 
@@ -49,8 +55,8 @@
     <div class="site-blocks-cover overlay" style="background-image: url(images/testimonials/skating.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-start">
-          <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
-            <h1 style="font: size 20px;color:green;font-weight:bold">About Us</h1>
+          <div class="col-md-6 text-center text-md-left"data-aos="fade-up-right">
+            <h1 style="font: size 20px;color:green;font-weight:bold" data-aos="fade-right">About Us</h1>
             <p class="mt-4">The City of Payris won the bid to host the FunOlympic Games in 2024. During the build-up to the
                     planned games in 2024, the city had invested hugely in IT infrastructure and systems to make sure
                     that the games would have been well organized, productive, attended, and accessible to everyone. </p>
@@ -59,13 +65,13 @@
       </div>
     </div>
 
-    <div class="site-section" data-aos="fade-up">
+    <div class="site-section" data-aos="fade-left">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
+          <div class="col-md-6"data-aos="fade-right">
             <img src="images/highlightgames/highlight2.jpg" alt="Image" class="img-fluid">
           </div>
-          <div class="col-md-6 pl-md-5">
+          <div class="col-md-6 pl-md-5"data-aos="fade-left">
             <h2 class="text-black">paralympic Games</h2>
             <p class="lead">The Paralympic Games provide a platform for Para athletes with a diverse range of impairments
                         to showcase their outstanding abilities to millions of spectators and billions of TV
@@ -81,7 +87,7 @@
       </div>
     </div>
 
-    <div class="site-section" data-aos="fade-up">
+    <div class="site-section" data-aos="fade-up-right">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 order-2">
@@ -95,8 +101,16 @@
         </div>
        </div>
      </div> 
+
+     <script>
+  AOS.init({
+  offset:300,
+  duration:1300,
+  }
+  );
+</script>
     <!-- footer -->
-    <footer class="site-footer border-top">
+    <footer class="site-footer border-top" data-aos="fade-up-right">
     <div>
             <h4 style="text-align: center;">Contact Us</h4>
             <p>Stay connected with us for the latest updates and news about the Payris FunOlympic 2024. 
