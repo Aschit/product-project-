@@ -9,7 +9,6 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" href="css/loader.css">
   <script src="js/loader.js"></script>
-  <link rel="stylesheet" href="style.css">
 
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -18,10 +17,40 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
   <!-- Favicons -->
   <link rel="icon" href="images/logo.jpg">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
+<style>
+.nav-link {
+    padding-right: 950px;
+}
+navbar-nav li a[href="profile.php"] {
+    color: #fff; 
+    padding: 10px 20px;
+    margin: 50px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+} 
+.navbar-brand
+{
+  color:grey;
+  font-size: 100px;
+  margin: 0px;
+}
+.navbar-nav .nav-link {
+            font-size: 1.2rem;
+}
+.dropdown-item {
+    font-size: 1.2rem;
+}
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+</style>
 
 <body>
   <div class="loader"></div>
@@ -47,7 +76,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="login.php">Login</li>
-              <li><a class="dropdown-item" href="register.php">SignIn</a></li>
+              <li><a class="dropdown-item" href="register.php">SignUp</a></li>
             </ul>
           </li>
         </ul>
@@ -103,33 +132,43 @@
   <!-- Carousel End -->
 
   <!-- About Start -->
-  <div class="container-xxl py-5">
-    <div class="container">
-      <div class="row g-5 align-items-center">
-        <div class="col-lg-6" data-aos="fade-up">
-          <div class="card">
-            <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-            <h1 class="mb-4">Welcome to the <span class="text-primary text-uppercase"> Fun Olympic Sports</span></h1>
-            <p class="mb-4">Our mission is to provide a comprehensive and engaging experience for sports enthusiasts and curious minds alike. Whether you're seeking the latest updates on Olympic events, exploring the history of the Games, or discovering the inspiring journeys of athletes from around the globe, you'll find it here. We invite you to join us in celebrating the timeless values of excellence, friendship, and respect that the Olympics embody.</p>
-            <a href="login.php" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Explore More</a>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50">
-            <div class="row g-3">
-              <div class="col-6 text-end">
-                <a href="games/boxing.jpg"><img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="games/boxing.jpg" alt=""></a>
-              </div>
-              <div class="col-6 text-start">
-                <a href="games/favicon.png"><img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="games/favicon.png" alt=""></a>
-              </div>
-              <div class="col-6 text-end">
-                <a href="games/youth karate.jpg"><img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="games/youth karate.jpg" alt=""></a>
-              </div>
 
+  <div class="container">
+        <div class="row g-5 align-items-center mt-5" data-aos="flip-left">
+            <div class="col-lg-6">
+                <h2 class="section-title text-start text-danger twxt-uppercase">About</h2>
+                <h3 class="text-primary" style="color: red;">Our Mission </h3>  
+                <p class="mb-4">Our mission is to provide a comprehensive and engaging experience for sports enthusiasts
+                    and curious minds alike. Whether you're seeking the latest updates on Olympic events, exploring the
+                    history of the Games, or discovering the inspiring journeys of athletes from around the globe,
+                    you'll find it here. We invite you to join us in celebrating the timeless values of excellence,
+                    friendship, and respect that the Olympics embody.</p>
+                <a href="login.php" class="btn btn-warning py-md-3 px-md-5 me-3 mb-4 animated slideInLeft"  style="color:#fff;font-size:20px;"> Watch Live</a>
+                <div class="spinner-border text-danger" role="status">
+</div>
             </div>
-          </div>
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-6 text-end mb-4"  data-aos="fade-left">
+                        <a href="images/games/boxing.jpg"><img class="img-fluid rounded w-75 wow zoomIn"
+                                data-wow-delay="0.1s" src="images/games/boxing.jpg" alt="About Image 1">
+                        </a>
+                    </div>
+                    <div class="col-6 text-start mb-4" data-aos="fade-up-left">
+                            <a href="images/games/youth karate.jpg"><img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="images/games/youth karate.jpg" alt="About Image 2"></a>
+                    </div>
+                    <div class="col-6 text-end mb-4" data-aos="fade-down-right">
+                            <a href="images/games/tabletennis.jpg"><img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="images/games/tabletennis.jpg" alt="About Image 3"></a>
+                        </div>
+
+                        <div class="col-6 text-start mb-4" data-aos="fade-down-right">
+                            <a href="images/games/hockey.jpg"><img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="images/games/hockey.jpg" alt="About Image 4"></a>
+                        </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+    
     <!-- About End -->
 
     <!-- Games Section Start -->
@@ -144,45 +183,51 @@
 
           <div class="col" data-aos="flip-left">
             <div class="card" style="width: 18rem; ">
-              <img src="images/games/football.jpg" class="card-img-top" alt="Football Image">
+              <img src="images/games/football.jpg" class="card-img-top" alt="Football Image" style="width: 100%; height: auto;">
               <div class="card-body">
                 <h5 class="card-title">Football</h5>
                 <p>"Football is a game of passion, unity, and the relentless pursuit of victory. Let
                   the Payris FunOlympic 2024 ignite the spirit of the beautiful game!"</p>
-                <a href="login.php" class="btn btn-primary">Learn More</a>
+                <a href="login.php" class="btn btn-primary"><button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style="background-color: red;"></span>
+  <span class="sr-only"></span>
+</button>Watch</a>
               </div>
             </div>
           </div>
           <!-- Basketball -->
           <div class="col " data-aos="fade-up-right">
             <div class="card" style="width: 18rem; ">
-              <img src="images/games/basketball.jpg" class="card-img-top" alt="Basketball Image">
+              <img src="images/games/basketball.jpg" class="card-img-top" alt="Basketball Image"style="width: 50%; height: auto;">
               <div class="card-body">
                 <h5 class="card-title">Basketball</h5>
                 <p class="card-text">Basketball is a fast moving game that involves a lot of variety, including shooting, dribbling, passing, rebounding, defence and much more.let make the payris funolyampic 2024 memorable..</p>
-                <a href="login.php" class="btn btn-primary">Learn More</a>
+                <a href="login.php" class="btn btn-primary"><span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style="background-color: red;"></span>
+  <span class="sr-only"></span>Watch</a>
               </div>
             </div>
           </div>
           <!-- Swimming -->
           <div class="col " data-aos="flip-left">
-            <div class="card" style="width: 18rem;">
-              <img src="images/games/swimming.jpg" class="card-img-top" alt="Swimming Image">
+            <div class="card" style="width: 16rem;">
+              <img src="images/games/swimming.jpg" class="card-img-top" alt="Swimming Image" style="width: 70%; height: auto;">
               <div class="card-body">
                 <h5 class="card-title">Swimming</h5>
-                <p class="card-text">Swimming at the Olympics is both an individual and team sport where competitors propel their bodies through water in either an outdoor or indoor swimming pool using one of the following strokes: Freestyle, backstroke, breaststroke, or butterfly.</p>
-                <a href="login.php" class="btn btn-primary">Learn More</a>
+                <p class="card-text">Swimming at the Olympics is both an individual and team sport where competitors propel their bodies through water in either an outdoor or indoor swimming pool with the best</p>
+                <a href="login.php" class="btn btn-primary"><span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style="background-color: red;"></span>
+  <span class="sr-only"></span>Watch</a>
               </div>
             </div>
           </div>
           <!-- Hockey -->
           <div class="col " data-aos="flip-down">
             <div class="card" style="width: 18rem;">
-              <img src="images/games/hockey.jpg" class="card-img-top" alt="Hockey Image">
+              <img src="images/games/hockey.jpg" class="card-img-top" alt="Hockey Image"style="width: 50%; height: auto;">
               <div class="card-body">
                 <h5 class="card-title">Hockey</h5>
-                <p class="card-text">Information about hockey.</p>
-                <a href="login.php" class="btn btn-primary">Learn More</a>
+                <p class="card-text">The roots of hockey are buried deep in antiquity. Historical records show that a crude form of the game was played in Egypt 4,000 years ago and in Ethiopia around 1,000BC. Various museums offer evidence that a form of the game was played by all over the world.     </p>
+                <a href="login.php" class="btn btn-primary"><span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style="background-color: red;"></span>
+  <span class="sr-only"></span>Watch</a>
               </div>
             </div>
           </div>
@@ -222,8 +267,7 @@
 
 <!-- more games highlight-->
 
-<div class="site-section block-13 bg-primary fixed overlay-primary bg-image" style="background-image: url('images/games/bg/image.jpg');" data-stellar-background-ratio="0.5">
-
+<div class="site-section block-13 fixed overlay-primary bg-image" data-stellar-background-ratio="0.5" style="background-color: #00FFFF;">
   <div class="container">
     <div class="row mb-5">
       <div class="col-md-12 text-center"data-aos="fade-down-left">

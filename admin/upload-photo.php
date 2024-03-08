@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['username'])) {
-    header("location: sports.php");
+    header("location: home.php");
     exit(); // Added exit() to stop executing the rest of the code
 }
 ?>
@@ -36,7 +36,7 @@ if (!isset($_SESSION['username'])) {
         <h1 class="heading" style="font-size: 30px; color: #333; margin-top: 20px; font-weight: bold;">Upload Favorite Sports</h1>
         <form action="" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="select" style="font-size: 18px;">Select Image:</label>
+                <label for="select" style="font-size: 25px;color: pink;">Select Image:</label>
                 <br><br>
                 <input type="file" class="form-control-file" style="font-size: 18px; padding: 7px 1px;" name="image"
                     id="image" placeholder="Upload Image" aria-describedby="fileHelpId">
@@ -52,9 +52,9 @@ if (!isset($_SESSION['username'])) {
                         $image_name = $_FILES['image']['name'];
                         $image_type = $_FILES['image']['type'];
                         $image_tmp = $_FILES['image']['tmp_name'];
-                        move_uploaded_file($image_tmp, "../images/news/$image_name");
+                        move_uploaded_file($image_tmp, "../images/games/$image_name");
                         echo "File uploaded successfully!" . "<br>";
-                        echo "<img src='../images/news/$image_name' width='300px'>";
+                        echo "<img src='../images/games/$image_name' width='300px'>";
                     }
                     ?>
         </div>

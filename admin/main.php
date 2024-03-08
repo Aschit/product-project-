@@ -25,6 +25,8 @@ else
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="admincss/style.css">
+    <link rel="icon" href="images/logo.jpg">
+
 
 </head>
 
@@ -47,7 +49,7 @@ else
                  }
              ?>
              <img src="../images/dashboard/user.jpg" width="40">
-                <p>signup users details</p>
+                <p>signIn users details</p>
                 <a href="view-users.php" class="btn">Manage Users</a>
             </div>
 
@@ -84,7 +86,7 @@ else
             </div>
 
             <div class="box">
-            <img src="../images/dashboard/update.jpg" width="60">
+            <img src="../images/dashboard/update.jpg" width="35">
                 <p>update posts</p>
                 <a href="add-post.php" class="btn">Add New Posts</a>
             </div>

@@ -355,6 +355,7 @@ section {
 
 .side-bar .navbar a:hover {
     background-color: var(--light-bg);
+    
 }
 
 .side-bar .navbar a:hover i {
@@ -448,7 +449,7 @@ section {
 
 .dashboard .box-container .box {
     padding: 2rem;
-    border-radius: .5rem;
+    border-radius: .2rem;
     background-color: var(--white);
     text-align: center;
 }

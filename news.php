@@ -19,15 +19,29 @@ if(!isset($_SESSION['username']))
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
   </head>
   <body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/news/news0.jpg);" data-stellar-background-ratio="0.5">
+
+    <script>
+
+  AOS.init({
+  offset:300,
+  duration:1300,
+  }
+  );
+    </script>
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/news/news0.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-start">
           <div class="col-md-6 text-center text-md-left">
-            <h1 class="bg-text-line">News</h1>
+            <h1 class="bg-text-line" data-aos="fade-up">News</h1>
             <p class="mt-4"><a href="home.php">Stay connected with us for the latest updates and news about the Payris FunOlympic 2024.
                     Join the conversation using #PayrisFunOlympic2024.</p>
           </div>
@@ -35,12 +49,12 @@ if(!isset($_SESSION['username']))
       </div>
     </div>
     
-    <div class="site-section">
+    <div class="site-section" data-aos="fade-left">
       <div class="container" >
         <div class="row mb-5">
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="post-entry">
-              <div class="image">
+              <div class="image" data-aos="fade-up-right">
                 <img src="images/news/news1.jpg" alt="Image" class="img-fluid">
               </div>
               <div class="text p-4">
@@ -50,7 +64,7 @@ if(!isset($_SESSION['username']))
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up-left">
             <div class="post-entry">
               <div class="image">
                 <img src="images/news/news2.jpg" alt="Image" class="img-fluid">
@@ -62,48 +76,48 @@ if(!isset($_SESSION['username']))
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-down-left">
             <div class="post-entry">
               <div class="image">
                 <img src="images/news/news3.jpg" alt="Image" class="img-fluid">
               </div>
-              <div class="text p-4">
+              <div class="text p-4" data-aos="fade-down-left">
                 <h2 class="h5 text-black"><a href="https://olympics.com/en/news/fih-junior-men-world-cup-hockey-2023-india-vs-canada-result-scores">canada vs India Who Will Win?</a></h2>
                 <span class="text-uppercase date d-block mb-3"><small> &bullet; november 25, 2023</small></span>
                 <p class="mb-0">"We arrive in an unbeatable situation to be able to fight for a goal as ambitious as the League. For us this is a dream, being able to live and compete for the top positions in the League is spectacular. </p>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-down-left">
             <div class="post-entry">
               <div class="image">
                 <img src="images/news/news4.jpg" alt="Image" class="img-fluid">
               </div>
-              <div class="text p-4">
+              <div class="text p-4" data-aos="fade-down-left">
                 <h2 class="h5 text-black"><a href="#">Nepal vs India Who Will Win?</a></h2>
                 <span class="text-uppercase date d-block mb-3"><small> &bullet; Sep 25, 2018</small></span>
                 <p class="mb-0">"We arrive in an unbeatable situation to be able to fight for a goal as ambitious as the League. For us this is a dream, being able to live and compete for the top positions in the League is spectacular. </p>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-down-left">
             <div class="post-entry">
               <div class="image">
                 <img src="images/news/news5.jpg" alt="Image" class="img-fluid">
               </div>
-              <div class="text p-4">
+              <div class="text p-4" data-aos="fade-down-left">
                 <h2 class="h5 text-black"><a href="#">India vs Japan Who Will Win?</a></h2>
                 <span class="text-uppercase date d-block mb-3"><small> &bullet; Sep 25, 2018</small></span>
                 <p class="mb-0">"We arrive in an unbeatable situation to be able to fight for a goal as ambitious as the League. For us this is a dream, being able to live and compete for the top positions in the League is spectacular. </p>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-down-left">
             <div class="post-entry">
               <div class="image">
                 <img src="images/news/news6.jpg" alt="Image" class="img-fluid">
               </div>
-              <div class="text p-4">
+              <div class="text p-4" data-aos="fade-down-left">
                 <h2 class="h5 text-black"><a href="#">China vs Australia Who Will Win?</a></h2>
                 <span class="text-uppercase date d-block mb-3"><small> &bullet; Sep 25, 2018</small></span>
                 <p class="mb-0">"We arrive in an unbeatable situation to be able to fight for a goal as ambitious as the League. For us this is a dream, being able to live and compete for the top positions in the League is spectacular. </p>
@@ -112,7 +126,7 @@ if(!isset($_SESSION['username']))
   </div>
 
 <!-- footer -->
-<footer class="site-footer border-top">
+<footer class="site-footer border-top"  data-aos="fade-down-left">
     <div>
             <h4 style="text-align: center;">Contact Us</h4>
             <p>Stay connected with us for the latest updates and news about the Payris FunOlympic 2024. 

@@ -18,8 +18,6 @@ else
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -60,8 +58,8 @@ else
 
 <body>
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #008374;">
-        <a class="navbar-brand" href="main.php"> payris Fun Olyampics 2024</a>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgba(255, 99, 71, 0.5);">
+        <a class="navbar-brand" href="main.php" style="margin-left:600px;"> payris Fun Olyampics 2024</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -75,7 +73,7 @@ else
         <div class="container-login100" style="background-color: #DCDCDC;">
             <div
                 style="width: 50%; margin: 0 auto; margin-top: 20px; background-color: #fff; padding: 50px 30px; border-radius: 7px;">
-                <h3 style="margin-top: -10px; text-align: center; color: #008374; font-family: Arial, sans-serif;">
+                <h3 style="margin-top: -10px; text-align: center; color: #837400; font-family: Arial, sans-serif;">
                     <strong>UPDATE COMMENT</strong>
                 </h3>
                 <form action="update-comment.php" method="get" enctype="multipart/form-data">
@@ -109,7 +107,7 @@ else
                             aria-describedby="helpId" value="<?php echo $_GET['rate']; ?>">
                     </div>
                     <!-- submit button -->
-                    <button type="submit" class="btn btn-info btn-lg" name="submit">Update Comment</button>
+                    <button type="submit" class="btn bg-info btn-lg" name="submit"  >Update Comment</button>
                 </form>
             </div>
         </div>

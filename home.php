@@ -9,12 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <script src="js/animate.js"></script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
+    
 
 
 
@@ -22,18 +23,39 @@
 .nav-link {
     padding-right: 950px;
 }
-navbar-nav li a[href="profile.php"] {
-    color: #fff; 
-    padding: 10px 20px;
-    margin: 50px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease; 
-} 
+
+.navbar-brand
+{
+  color:grey;
+  font-size: 100px;
+  margin: 0px;
+}
+.navbar-nav .nav-link {
+            font-size: 1.2rem;
+}
+.dropdown-item {
+    font-size: 1.2rem;
+}
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
 </style>
 
 </head>
 
 <body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script>
+  AOS.init({
+  offset:300,
+  duration:1300,
+  }
+  );
+</script>
+
+
     <!-- navbar starts --> 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -58,7 +80,7 @@ navbar-nav li a[href="profile.php"] {
           </a>
           
           <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="News.php">News</a></li>
+          <li><a class="dropdown-item" href="news.php">News</a></li>
             <li><a class="dropdown-item" href="sports.php">Sports</li>
             <li><a class="dropdown-item" href="contact.php">Contact</a></li>
 
@@ -68,14 +90,13 @@ navbar-nav li a[href="profile.php"] {
             Account
           </a>
           <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="sports.php">sports</a></li>
           <li><a class="dropdown-item" href="login.php">Login</a></li>
             <li><a class="dropdown-item" href="register.php">SignIn</a></li>
             <li><a class="dropdown-item" href="logout.php">LogOut</a></li>
           </ul>
         </li>
       </ul> 
-      <a href="profile.php" class="nav-link">User</a>
+      <a href="profile.php" class="nav-link"  style="color: red; font-size:25px;">User</a>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -97,20 +118,20 @@ navbar-nav li a[href="profile.php"] {
         <!-- Carousel Inner -->
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000" >
-                <img src="images/highlightgames/home1.jpg" class="d-block w-100" alt="First Slide">
+                <img src="images/highlightgames/home1.jpeg" class="d-block w-100" alt="First Slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5> BasketBall TOP olyampic Games</h5>
+                    <h5>  TOP olyampic Players</h5>
                     <p>Olympic Games, quadrennial athletic festival that is often regarded as the world's foremost sports competition. The ancient Olympic Games ...</p>
                 </div>
             </div>
             <div class="carousel-item"  data-bs-interval="2000">
-                <img src="images/highlightgames/home2.jpg" class="d-block w-100" alt="Second Slide">
+                <img src="images/highlightgames/slide2.jpg" class="d-block w-100" alt="Second Slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second Sport Swimming</h5>
+                    <h5>women Sport</h5>
                     Olympic Games, quadrennial athletic festival that is often regarded as the world's foremost sports competition. The ancient Olympic Games ...                </div>
             </div>
             <div class="carousel-item" data-bs-interval="10000">
-                <img src="images/highlightgames/home3.jpg" class="d-block w-100" alt="Third Slide">
+                <img src="images/highlightgames/slide3.jpg" class="d-block w-100" alt="Third Slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Nice Game</h5>
                     Olympic Games, quadrennial athletic festival that is often regarded as the world's foremost sports competition. The ancient Olympic Games ...                </div>
@@ -132,7 +153,7 @@ navbar-nav li a[href="profile.php"] {
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left">
                     <h6 class="section-title text-start text-primary text-uppercase">Live</h6>
                     <h1 class="mb-4">Welcome to the <span class="text-primary text-uppercase">Olympic Live</span></h1>
                     <marquee width="60%" direction="down" height="100px" style="color:#00FF00; font-size:20px;">
@@ -143,17 +164,7 @@ navbar-nav li a[href="profile.php"] {
                                 style="color: #e60000;font-size: 30px; "></i>
                             <span style="color: #e60000;">LIVE VIDEOS</span></a>
                 </div>
-                <div class="col-lg-6">
-                    <div class="row g-3">
-                        <div class="col-6 text-end">
-                            <a href="games/boxing.jpg"><img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="games/boxing.jpg" alt=""></a>
-                        </div>
-                        <div class="col-6 text-start">
-                            <a href="games/favicon.png"><img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="games/favicon.png" alt=""></a>
-                        </div>
-                        <div class="col-6 text-end">
-                            <a href="games/youth karate.jpg"><img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="games/youth karate.jpg" alt=""></a>
-                        </div>
+               
                         
                     </div>
                 </div>
@@ -172,15 +183,15 @@ navbar-nav li a[href="profile.php"] {
 
         <!-- ======= Stats Counter Section ======= -->
         <section id="stats-counter" class="stats-counter">
-            <div class="container" data-aos="fade-up">
+            <div class="container" data-aos="fade-up-left">
 
                 <div class="row gy-4 align-items-center">
 
                     <div class="col-lg-6">
-                        <img src="images/games/boxing.jpg" alt="" class="img-fluid">
+                        <img src="images/games/games.jpg" alt="" class="img-fluid">
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-up-right">
 
                         <div class="stats-item d-flex align-items-center">
                             <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1"
@@ -196,7 +207,7 @@ navbar-nav li a[href="profile.php"] {
                         </div>
                         <!-- End Stats Item -->
 
-                        <div class="stats-item d-flex align-items-center">
+                        <div class="stats-item d-flex align-items-center" data-aos="fade-up-left">
                             <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
                                 class="purecounter"></span>
                             <p><strong>LIVE EVENTS</strong> watch latest live olympic videos </p>
@@ -213,10 +224,10 @@ navbar-nav li a[href="profile.php"] {
 
         <!-- ======= Explore the games Section ======= -->
         <section id="call-to-action" class="call-to-action">
-            <div class="container text-center" data-aos="zoom-out">
+            <div class="container text-center" data-aos="fade-up-left">
                 <a href="https://www.youtube.com/watch?v=zBeyzFMGtwQ" class="glightbox play-btn"></a>
                 <!-- <h3>FunOlympic 2023</h3> -->
-                <p> Let’s Move: An Olympic Invite to get the world moving!</p>
+                <p  style="text-align: center;"> Let’s Move: An Olympic Invite to get the world moving!</p>
                 <a class="cta-btn" href="https://www.youtube.com/watch?v=zBeyzFMGtwQ">Explore the games</a>
             </div>
         </section>
@@ -229,7 +240,7 @@ navbar-nav li a[href="profile.php"] {
                     <h2>LATEST NEWS</h2>
                     <p>"Stay updated with payris FunOlympic Games 2024!"</p>
                 </div>
-                <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4" data-aos="fade-up-right" >
                     <?php
             include 'config/connection.php';
             $query = "SELECT * FROM posts ORDER BY RAND() LIMIT 10";
@@ -244,7 +255,7 @@ navbar-nav li a[href="profile.php"] {
                         <div class="service-item position-relative">
 
                             <div class="image-container">
-                                <img src="images/news/?php echo $d; ?>" alt="Your Image" height="230" width="350"
+                                <img src="images/news/<?php echo $d; ?>" alt="Your Image" height="230" width="350"
                                     style="padding: 15px;">
                             </div>
                             <strong><?php echo $b; ?></strong>
@@ -253,6 +264,9 @@ navbar-nav li a[href="profile.php"] {
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
+                </div>
+            </div>
+            
                     <?php
             }
             ?>
@@ -263,19 +277,19 @@ navbar-nav li a[href="profile.php"] {
 
         <!-- ======= Testimonials Section ======= -->
         <section id="testimonials" class="testimonials">
-            <div class="container" data-aos="fade-up">
+            <div class="container" data-aos="fade-up-left">
 
                 <div class="section-header">
                     <h2>TESTIMONIALS</h2>
                     <p>"What Our Clients Say!!"</p>
                 </div>
 
-                <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="slides-3 swiper" data-aos="fade-up-right">
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
+                            <div class="testimonial-wrap" data-aos="flip-left">
+                                <div class="testimonial-item" data-aos="flip-left">
                                     <div class="d-flex align-items-center">
                                         <img src="images/testimonials/testimonials2.jpg.crdownload"
                                             class="testimonial-img flex-shrink-0" alt="">
@@ -303,9 +317,9 @@ navbar-nav li a[href="profile.php"] {
                         </div>
                         <!-- End testimonial item -->
 
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
+                        <div class="swiper-slide" data-aos="flip-left">
+                            <div class="testimonial-wrap"  >
+                                <div class="testimonial-item" data-aos="flip-left">
                                     <div class="d-flex align-items-center">
                                         <img src="images/testimonials/testimonial-3.jpg"
                                             class="testimonial-img flex-shrink-0" alt="">
@@ -334,9 +348,9 @@ navbar-nav li a[href="profile.php"] {
                         </div>
                         <!-- End testimonial item -->
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-aos="flip-left">
                             <div class="testimonial-wrap">
-                                <div class="testimonial-item">
+                                <div class="testimonial-item" data-aos="flip-left">
                                     <div class="d-flex align-items-center">
                                         <img src="images/testimonials/testimonials-4.jpg"
                                             class="testimonial-img flex-shrink-0" alt="">
@@ -367,9 +381,9 @@ navbar-nav li a[href="profile.php"] {
                   
                         <!-- End testimonial item -->
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-aos="flip-left">
                             <div class="testimonial-wrap">
-                                <div class="testimonial-item">
+                                <div class="testimonial-item" data-aos="flip-left">
                                     <div class="d-flex align-items-center">
                                         <img src="images/testimonials/download.jpg"
                                             class="testimonial-img flex-shrink-0" alt="">
@@ -407,7 +421,7 @@ navbar-nav li a[href="profile.php"] {
 
         <!-- ======= Sports Section ======= -->
         <section id="portfolio" class="portfolio sections-bg">
-            <div class="container" data-aos="fade-up">
+            <div class="container" data-aos="flip-left">
 
                 <div class="section-header">
                     <h2>SPORTS</h2>
@@ -418,7 +432,7 @@ navbar-nav li a[href="profile.php"] {
                     data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
 
                     <div>
-                        <ul class="portfolio-flters">
+                        <ul class="portfolio-flters"  data-aos="flip-right">
                             <li data-filter="*" class="filter-active">All</li>
                             <li data-filter=".filter-app">Badminton</li>
                             <li data-filter=".filter-product">Football</li>
@@ -431,7 +445,7 @@ navbar-nav li a[href="profile.php"] {
                     <div class="row gy-4 portfolio-container">
 
                         <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-                            <div class="portfolio-wrap">
+                            <div class="portfolio-wrap" data-aos="flip-left">
                                 <a href="images/games/badminton.jpg" data-gallery="portfolio-gallery-app"
                                     class="glightbox"><img src="images/games/badminton.jpg" class="img-fluid" alt=""></a>
                                 <div class="portfolio-info">
@@ -444,7 +458,7 @@ navbar-nav li a[href="profile.php"] {
                         <!-- End Sports Item -->
 
                         <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-                            <div class="portfolio-wrap">
+                            <div class="portfolio-wrap" data-aos="flip-right">
                                 <a href="images/games/football.jpg" data-gallery="portfolio-gallery-app"
                                     class="glightbox"><img src="images/games/football.jpg" class="img-fluid" alt=""></a>
                                 <div class="portfolio-info">
@@ -457,7 +471,7 @@ navbar-nav li a[href="profile.php"] {
                         <!-- End Sports Item -->
 
                         <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-                            <div class="portfolio-wrap">
+                            <div class="portfolio-wrap"  data-aos="flip-left">
                                 <a href="images/games/judo.jpg" data-gallery="portfolio-gallery-app"
                                     class="glightbox"><img src="images/games/judo.jpg" class="img-fluid" alt=""></a>
                                 <div class="portfolio-info">
@@ -470,7 +484,7 @@ navbar-nav li a[href="profile.php"] {
                         <!-- End Sports Item -->
 
                         <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-                            <div class="portfolio-wrap">
+                            <div class="portfolio-wrap" data-aos="flip-up">
                                 <a href="images/games/swimming.jpg" data-gallery="portfolio-gallery-app"
                                     class="glightbox"><img src="images/games/swimming.jpg" class="img-fluid" alt=""></a>
                                 <div class="portfolio-info">
@@ -483,7 +497,7 @@ navbar-nav li a[href="profile.php"] {
                         <!-- End Sports Item -->
 
                         <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-                            <div class="portfolio-wrap">
+                            <div class="portfolio-wrap"  data-aos="flip-up">
                                 <a href="images/games/badminton.jpg" data-gallery="portfolio-gallery-app"
                                     class="glightbox"><img src="images/games/badminton.jpg" class="img-fluid" alt=""></a>
                                 <div class="portfolio-info">
@@ -496,7 +510,7 @@ navbar-nav li a[href="profile.php"] {
                         <!-- End Sports Item -->
 
                         <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-                            <div class="portfolio-wrap">
+                            <div class="portfolio-wrap" data-aos="flip-up">
                                 <a href="images/games/football.jpg" data-gallery="portfolio-gallery-app"
                                     class="glightbox"><img src="images/games/football.jpg" class="img-fluid" alt=""></a>
                                 <div class="portfolio-info">
@@ -509,7 +523,7 @@ navbar-nav li a[href="profile.php"] {
                         <!-- End Sports Item -->
 
                         <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-                            <div class="portfolio-wrap">
+                            <div class="portfolio-wrap" data-aos="flip-up">
                                 <a href="images/games/judo2.jpg" data-gallery="portfolio-gallery-app"
                                     class="glightbox"><img src="images/games/judo2.jpg" class="img-fluid" alt=""></a>
                                 <div class="portfolio-info">
@@ -522,7 +536,7 @@ navbar-nav li a[href="profile.php"] {
                         <!-- End Sports Item -->
 
                         <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-                            <div class="portfolio-wrap">
+                            <div class="portfolio-wrap" data-aos="flip-up">
                                 <a href="images/games/swimming.jpg" data-gallery="portfolio-gallery-app"
                                     class="glightbox"><img src="images/games/swimming.jpg" class="img-fluid" alt=""></a>
                                 <div class="portfolio-info">
@@ -535,7 +549,7 @@ navbar-nav li a[href="profile.php"] {
                         <!-- End Sports Item -->
 
                         <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-                            <div class="portfolio-wrap">
+                            <div class="portfolio-wrap" data-aos="flip-up">
                                 <a href="images/games/badminton.jpg" data-gallery="portfolio-gallery-app"
                                     class="glightbox"><img src="images/games/badminton.jpg" class="img-fluid" alt=""></a>
                                 <div class="portfolio-info">
@@ -548,7 +562,7 @@ navbar-nav li a[href="profile.php"] {
                         <!-- End Sports Item -->
 
                         <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-                            <div class="portfolio-wrap">
+                            <div class="portfolio-wrap" data-aos="flip-up">
                                 <a href="images/games/football2.jpg" data-gallery="portfolio-gallery-app"
                                     class="glightbox"><img src="images/games/football2.jpg" class="img-fluid" alt=""></a>
                                 <div class="portfolio-info">
@@ -561,7 +575,7 @@ navbar-nav li a[href="profile.php"] {
                         <!-- End Sports Item -->
 
                         <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-                            <div class="portfolio-wrap">
+                            <div class="portfolio-wrap" data-aos="flip-up">
                                 <a href="images/games/judo2.jpg" data-gallery="portfolio-gallery-app"
                                     class="glightbox"><img src="images/games/judo2.jpg" class="img-fluid" alt=""></a>
                                 <div class="portfolio-info">
@@ -584,7 +598,7 @@ navbar-nav li a[href="profile.php"] {
 
         <!-- ======= Our Athelete Section ======= -->
         <section id="team" class="team">
-            <div class="container" data-aos="fade-up">
+            <div class="container" data-aos="fade-up-left">
 
                 <div class="section-header">
                     <h2>MEET THE ATHLETES</h2>
@@ -609,7 +623,7 @@ navbar-nav li a[href="profile.php"] {
                     </div>
                     <!-- End Athelete Member -->
 
-                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up-left" data-aos-delay="200">
                         <div class="member">
                             <img src="images/testimonials/runner.webp" class="img-fluid" alt="">
                             <h4><a href="sports.php" title="More Details">Usain Bolt</a></h4>
@@ -624,7 +638,7 @@ navbar-nav li a[href="profile.php"] {
                     </div>
                     <!-- End Athelete Member -->
 
-                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up-left" data-aos-delay="300">
                         <div class="member">
                             <img src="images/testimonials/suimmer.jpg" class="img-fluid" alt="">
                             <h4><a href="sports.php" title="More Details">Sunisa Lee</a></h4>
@@ -639,7 +653,7 @@ navbar-nav li a[href="profile.php"] {
                     </div>
                     <!-- End Athelete Member -->
 
-                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up-left"data-aos-delay="400">
                         <div class="member">
                             <img src="images/testimonials/skate.webp" class="img-fluid" alt="">
                             <h4><a href="sports.php" title="More Details">Yuto Horigome</a></h4>

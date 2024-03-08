@@ -24,22 +24,32 @@ if (!isset($_SESSION['username'])) {
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 
 </head>
 
 <body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+  AOS.init({
+  offset:300,
+  duration:1300,
+  }
+  );
+    </script>
    
 
     <section id="portfolio" class="portfolio sections-bg">
-        <div class="container" data-aos="fade-up">
+        <div class="container"  data-aos="fade-down-left">
 
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-down-right">
                 <h2><strong>SPORTS</strong></h2> 
                 <p>"The only way to prove that you're a good sport is to lose"</p>
             </div>
 
             <?php
-          $dir=glob('assets/img/{*.jpg, *.png, *.jpeg}',GLOB_BRACE);
+          $dir=glob('images/games/{*.jpg, *.png, *.jpeg}',GLOB_BRACE);
           foreach($dir as $value)
           {
           ?>
@@ -65,10 +75,10 @@ if (!isset($_SESSION['username'])) {
           ?>
             <br><br><br>
             <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
-                data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+                data-portfolio-sort="original-order" data-aos="fade-left">
 
                 <div>
-                    <ul class="portfolio-flters">
+                    <ul class="portfolio-flters" data-aos="flip-left">
                         <li data-filter="*" class="filter-active">All</li>
                         <li data-filter=".filter-app">Badminton</li>
                         <li data-filter=".filter-product">Football</li>
@@ -78,9 +88,9 @@ if (!isset($_SESSION['username'])) {
                     <!-- End Sports Filters -->
                 </div>
 
-                <div class="row gy-4 portfolio-container">
+                <div class="row gy-4 portfolio-container" data-aos="flip-left">
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-app" data-aos="flip-left">
                         <div class="portfolio-wrap">
                             <a href="assets/img/sports/1.webp" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="images/games/badminton.jpg" class="img-fluid" alt=""></a>
@@ -93,7 +103,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <!-- End Sports Item -->
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-product">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-product"data-aos="flip-right">
                         <div class="portfolio-wrap">
                             <a href="images/games/football.jpg" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="images/games/football.jpg" class="img-fluid" alt=""></a>
@@ -106,7 +116,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <!-- End Sports Item -->
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-branding" data-aos="flip-right">
                         <div class="portfolio-wrap">
                             <a href="images/games/judo.jpg" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="images/games/judo.jpg" class="img-fluid" alt=""></a>
@@ -119,7 +129,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <!-- End Sports Item -->
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-books">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-books" data-aos="flip-down">
                         <div class="portfolio-wrap">
                             <a href="images/games/swimming.jpg" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="images/games/swimming.jpg" class="img-fluid" alt=""></a>
@@ -132,7 +142,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <!-- End Sports Item -->
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-app"  data-aos="flip-down">
                         <div class="portfolio-wrap">
                             <a href="images/games/badminton2.jpg" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="images/games/badminton2.jpg" class="img-fluid" alt=""></a>
@@ -145,7 +155,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <!-- End Sports Item -->
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-product">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-product"data-aos="zoom-in">
                         <div class="portfolio-wrap">
                             <a href="images/games/football2.jpg" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="images/games/football2.jpg" class="img-fluid" alt=""></a>
@@ -158,7 +168,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <!-- End Sports Item -->
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-branding"data-aos="zoom-in">
                         <div class="portfolio-wrap">
                             <a href="images/games/judo2.jpg" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="images/games/judo2.jpg" class="img-fluid" alt=""></a>
@@ -171,7 +181,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <!-- End Sports Item -->
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-books">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-books"data-aos="zoom-in">
                         <div class="portfolio-wrap">
                             <a href="images/games/swimming.jpg" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="assets/img/sports/11.webp" class="img-fluid" alt=""></a>
@@ -184,7 +194,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <!-- End Sports Item -->
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-app" data-aos="zoom-in">
                         <div class="portfolio-wrap">
                             <a href="images/games/badminton.jpg" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="assets/img/sports/3.webp" class="img-fluid" alt=""></a>
@@ -197,7 +207,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <!-- End Sports Item -->
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-product">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-product" data-aos="zoom-in">
                         <div class="portfolio-wrap">
                             <a href="images/games/football.jpg" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="images/games/football.jpg" class="img-fluid" alt=""></a>
@@ -210,7 +220,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <!-- End Sports Item -->
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-branding" data-aos="fade-left">
                         <div class="portfolio-wrap">
                             <a href="images/games/judo.jpg" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="images/games/judo.jpg" class="img-fluid" alt=""></a>
@@ -223,7 +233,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <!-- End Sports Item -->
 
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-books">
+                    <div class="col-xl-4 col-md-6 portfolio-item filter-books"data-aos="fade-left">
                         <div class="portfolio-wrap">
                             <a href="images/games/swimming.jpg" data-gallery="portfolio-gallery-app"
                                 class="glightbox"><img src="images/games/swimming.jpg" class="img-fluid" alt=""></a>

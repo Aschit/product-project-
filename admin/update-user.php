@@ -8,8 +8,8 @@ if(isset($_GET['submit']))
     $d=$_GET['email1'];
     $e=$_GET['phone_number1'];
     $h=$_GET['country1'];
-    $i=$_GET['gender1'];
-    $query="update users set fullname='$b', username='$c', email='$d', phone_number='$e', country='$h', gender='$i' where id='$a'";
+    $i=$_GET['sports1'];
+    $query="update users set fullname='$b', username='$c', email='$d', phone_number='$e', country='$h', sports='$i' where id='$a'";
     $run=mysqli_query($conn,$query);
     if($run)
     {

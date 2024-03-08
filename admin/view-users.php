@@ -2,7 +2,7 @@
 session_start();
 if(!isset($_SESSION['username']))
 {
-    header("location:index.php");
+    header("location:home.php");
 }
 else
 {
@@ -38,7 +38,7 @@ else
         Details</h1>
     <div1 class="col-md-12">
         <div1>
-            <table style="font-size: 15px; border-collapse: collapse; width: 100%; border: 1px solid #000;">
+            <table style="font-size: 20px; border-collapse: collapse; width: 100%; border: 1px solid #000;">
                 <thead style="background-color: #008374;; color: white;">
                     <tr>
                         <th>User ID</th>
@@ -47,7 +47,7 @@ else
                         <th>Email</th>
                         <th>Phone Number</th>
                         <th>Country</th>
-                        <th>Gender</th>
+                        <th>sports</th>
                         <th>Edit</th>
                         <th>Delete</th>
                     </tr>
@@ -64,7 +64,7 @@ else
                         $d = $row['email'];
                         $e = $row['phone_number'];
                         $h = $row['country'];
-                        $i = $row['gender'];
+                        $i = $row['sports'];
                     ?>
                     <tr>
                         <td scope="row"><?php echo $a; ?></td>
@@ -74,8 +74,8 @@ else
                         <td><?php echo $e; ?></td>
                         <td><?php echo $h; ?></td>
                         <td><?php echo $i; ?></td>
-                        <td><a class="btn btn-primary btn-lg"
-                                href="user-edit.php?id=<?php echo $a; ?>&fullname=<?php echo $b; ?>&username=<?php echo $c; ?>&email=<?php echo $d; ?>&phone_number=<?php echo $e; ?>&country=<?php echo $h; ?>&gender=<?php echo $i; ?>">Edit</a>
+                        <td><a class="btn bg-primary btn-lg"
+                                href="user-edit.php?id=<?php echo $a; ?>&fullname=<?php echo $b; ?>&username=<?php echo $c; ?>&email=<?php echo $d; ?>&phone_number=<?php echo $e; ?>&country=<?php echo $h; ?>&sports=<?php echo $i; ?>">Edit</a>
                         </td>
                         <td><a class="btn btn-danger btn-lg" href="user-delete.php?Del=<?php echo $a; ?>">Delete</a>
                         </td>

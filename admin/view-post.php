@@ -2,7 +2,7 @@
 session_start();
 if(!isset($_SESSION['username']))
 {
-    header("location:index.php");
+    header("location:home.php");
 }
 else
 {
@@ -60,11 +60,11 @@ else
                     <td scope="row"><?php echo $a; ?></td>
                     <td><?php echo $b; ?></td>
                     <td><?php echo $c; ?></td>
-                    <td><img src="../images/news/?php echo $d; ?>" width="100px"></td>
-                    <td><a class="btn btn-primary"
+                    <td><img src="../images/news/<?php echo $d; ?>" width="100px"></td>
+                    <td><a class="btn bg-primary"
                             href="edit.php?id=<?php echo $a; ?>&title=<?php echo $b; ?>&content=<?php echo $c; ?>&image=<?php echo $d; ?>">Edit</a>
                     </td>
-                    <td><a class="btn btn-danger" href="delete.php?Del=<?php echo $a; ?>">Delete</a></td>
+                    <td><a class="btn bg-danger" href="delete.php?Del=<?php echo $a; ?>">Delete</a></td>
 
                 </tr>
             </tbody>

@@ -7,6 +7,7 @@ body {
     background-color: #fff;
     padding: 10px;
     border-radius: 20px;
+   
 }
 
 .form-group {
@@ -15,6 +16,10 @@ body {
 
 .input-container {
   position: relative;
+  
+
+ 
+
 }
 
 .input-container i {

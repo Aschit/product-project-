@@ -36,24 +36,24 @@ else
         <br>
         <input type="text" name="title" id="title" class="form-control form-control-lg" placeholder="Write title here"
             aria-describedby="helpId" required
-            style="border: 1px solid #ccc; height: 40px; width: 800px; padding: 10px;"></input>
+            style="border: 1px solid #ccc; height: 40px; width: 800px; padding: 10px; font-size:20px"></input>
         <br><br>
         <div class="form-group">
             <label for="content" style="font-size: 20px;">Content:</label>
             <br>
             <textarea class="form-control form-control-lg" name="content" id="content" placeholder="Content goes here"
-                required style="border: 1px solid #ccc; height: 100px; width: 800px; padding: 10px;"></textarea>
+                required style="border: 1px solid #ccc; height: 100px; width: 800px; padding: 10px;font-size:20px"></textarea>
         </div>
         <br>
         <div class="form-group">
             <label for="select" style="font-size: 18px;">Select Image:</label>
             <br>
-            <input type="file" class="form-control-file" style="font-size: 18px; padding: 7px 1px;" name="image"
+            <input type="file" class="form-control-file" style="font-size:20px; padding: 7px 1px;" name="image"
                 id="image" placeholder="Upload Image" aria-describedby="fileHelpId">
         </div>
-        <button type="submit" class="btn btn-primary" name="submit"
+        <button type="submit" class="btn bg-primary" name="submit"
             style="font-size: 18px; padding: 10px; width: 100px;">Add Post</button>
-        <button type="reset" class="btn btn-danger"
+        <button type="reset" class="btn bg-danger"
             style="font-size: 18px; padding: 10px; width: 100px;">Cancel</button>
     </form>
     </div>

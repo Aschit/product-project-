@@ -2,7 +2,7 @@
 session_start();
 if(!isset($_SESSION['username']))
 {
-    header("location:admin/index.php");
+    header("location:admin/home.php");
 }
 else
 {

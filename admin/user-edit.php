@@ -157,9 +157,9 @@ input {
                     </div>
                     <!-- Gender -->
                     <div class="form-group">
-                        <label for="gender">Gender:</label>
-                        <input type="text" name="gender1" id="gender1" class="form-control" placeholder=""
-                            aria-describedby="helpId" value="<?php echo $_GET['gender']; ?>">
+                        <label for="sports">Sports:</label>
+                        <input type="text" name="sports1" id="sports1" class="form-control" placeholder=""
+                            aria-describedby="helpId" value="<?php echo $_GET['sports']; ?>">
                     </div>
                     <!-- submit button -->
                     <button type="submit" class="btn btn-info btn-lg" name="submit">Update User</button>

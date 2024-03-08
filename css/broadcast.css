@@ -4,14 +4,13 @@ body {
 }
 
 
-/* Broadcast section styling */
 #contact {
     padding: 60px 0;
 }
 
 #contact h2 {
-    color: red;
-    background-color: #be6231;
+    color: paleturquoise;
+    color: #be6231;
     font-size: 36px;
     font-weight: bold;
     text-align: center;

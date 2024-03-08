@@ -8,7 +8,7 @@
         $email = $_POST["email"];
         $phone_number = $_POST["phone_number"];
         $country = $_POST["country"];
-        $gender = $_POST["sports"];
+        $sports = $_POST["sports"];
         $password = $_POST["password"];
         $role = $_POST["role"];
 
@@ -89,26 +89,31 @@ window.location.replace('verification.php');
 <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-<!-- Vendor CSS Files -->
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
 <!-- js function -->
 <script src="js/main.js"></script>
-<!-- Template Main CSS File -->
+
 <link rel="stylesheet" href="css/register.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Register</title>
+
 </head>
 <body>
-    <!-- header section begins -->
+    <!-- header section begins --> 
     <div class="limiter">
-        <div class="container-login100" style="background-color: #DCDCDC;">
+        <div class="container-login100" style="background-image:url('images/signup.jpg'); ">
             <div
-                style="width: 50%; margin: 0 auto; margin-top: 20px; background-color: 	#99CC66; padding: 60px 80px; border-radius: 7px;">
+                style="width: 50%; margin: 0 auto; margin-top: 20px; background-color: 	#d1c1a5; padding: 60px 80px;">
                 <h3 style="margin-top: -10px; text-align: center; color: #008374; font-family: Arial, sans-serif;">
-                    <strong>Welcome to  Payris FunOlympic 2024</strong>
+                    <strong>Create Account with  Payris FunOlympic 2024</strong>
                 </h3>
-                <p style="text-align: center; color: #808080;">Signup to explore videos !!</p><br>
+                <p style="text-align: center; color: #808080;"><i class="bi bi-person-plus-fill"></i>Signup to explore videos !!</p><br>
                 <form action="#" method="POST" name="register">
                     <div class="form-group" style="color: #808080;">
                         <label for="fullname"><strong>Full Name *</strong></label>
@@ -160,9 +165,9 @@ window.location.replace('verification.php');
                         </div>
                     </div>
                     <div class="form-group" style="color: #808080;">
-                        <label for="gender"><strong>Sports *</strong></label>
+                        <label for="sports"><strong>Sports *</strong></label>
                         <div class="input-container">
-                            <select id="gender" name="gender" required
+                            <select id="sports" name="sports" required
                                 style="width: 100%; height: 40px; margin-top: 5px; padding: 5px">
                                 <option value="" selected disabled>Select your Favorate Sports</option>
                                 <option value="football">Football</option>
@@ -207,6 +212,10 @@ window.location.replace('verification.php');
                             </select>
         </div>
         </div>
+        <div class="form-group" style="color: #808080; font-size:20px; color:brown;">
+    <input type="checkbox" id="terms_condition" name="terms_condition"required>
+    <label for="terms_condition">I agree to the Terms and Conditions</a></label>
+</div>
 
                     <div class="form-group submit-btn" class="social-icons">
                         <input type="submit" value="SignUp" name="register"

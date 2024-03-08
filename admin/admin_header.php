@@ -1,9 +1,11 @@
 <!-- header section starts -->
 <header class="header">
     <section class="flex">
-    <a href="main.php" class="logo"> Payris Fun Olyampics 2024.</a>
+    <a href="main.php" class="logo" style="margin-left:300px;"> Payris Fun Olyampics 2024.</a>
+
         <div class="icons">
-            <div id="user-btn" class="fas fa-user"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="toggle-btn" class="fas fa-sun" onclick="toggleTheme()"></div>
         </div>
     </section>
 </header>
@@ -14,10 +16,19 @@
     body.classList.toggle('dark-theme');
   }
 </script>
+<style>
+body {
+    transition: background-color 0.4s ease;
+  }
+  .dark-theme {
+    background-color: #DBE9FA;
+    color: #008374;
+  }
+</style>
 <!-- header section ends -->
 
 <!-- side bar section starts  -->
-<div class="side-bar">
+<div class="side-bar" style="background-color: #F7F39A;">
 
     <div class="close-side-bar">
         <i class="fas fa-times"></i>
@@ -29,12 +40,12 @@
     </div>
 
     <nav class="navbar">
-        <a href="main.php"><i class="fas fa-home"></i><span>Home</span></a>
-        <a href="view-users.php"><i class="fas fa-user"></i><span>Users</span></a>
-        <a href="view-post.php"><i class="fas fa-graduation-cap"></i><span>News</span></a>
-        <a href="view-comment.php"><i class="fas fa-comment"></i><span>Comments</span></a>
-        <a href="../index.php" onclick="return confirm('Are You sure want to Logout??');"><i
-                class="fas fa-right-from-bracket"></i><span>logout</span></a>
+        <a href="main.php" style="color: green;">Home</span></a>
+        <a href="view-users.php" style="color: green;">Users</span></a>
+        <a href="view-post.php" style="color: green;">News</span></a>
+        <a href="view-comment.php" style="color:green;">Comments</span></a>
+        <a href="../index.php" style="color:red; text-decoration:none;" onclick="return confirm('Are You sure want to Logout??');"><i
+                class="fas fa-right-from-bracket" style="color:red;"></i><span>logout</span></a>
     </nav>
 
 </div>

@@ -70,7 +70,7 @@ session_start();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="js/login.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 <style>
     
     body {
@@ -205,6 +205,11 @@ session_start();
         cursor: pointer;
       
     }
+    button:hover {
+  opacity: 0.8;
+  background-color: greenyellow
+}
+
 
 
 
@@ -249,6 +254,7 @@ session_start();
 
         });
     });
+    
 </script>
 
     
@@ -262,14 +268,14 @@ session_start();
         <span></span>
 
 		<div class="navbar-header">
-			<a class="navbar-brand" href="index.php">Login to  Payris FunOlyampics2024</a>
+			<a class="navbar-brand" href="index.php" >Login to  Payris FunOlyampics2024</a>
 		</div>
 		<ul class="nav justify-content-end">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="login.php"><i class="fa-solid fa-user"></i>Login</a>
+    <a class="nav-link active" aria-current="page" href="login.php"><i class="bi bi-person"></i>Login</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="register.php"><i class="fa-solid fa-user-plus"></i>Signup</a>
+    <a class="nav-link" href="register.php"><i class="bi bi-person-plus-fill"></i>Signup</a>
   </li>
 	</div>
 	</div>	
@@ -278,7 +284,7 @@ session_start();
 <!-- login form starts -->
 
         <div class="limiter">
-            <div class="container-login100" style="background-color: #DCDCDC;">
+            <div class="container-login100" style="background-image:url('images/login.jpg') ;"   data-aos="fade-up-left">
                 <div class="wrap-login100">
                     <form action="#" method="POST" name="login">
                         <form class="login100-form validate-form">
@@ -324,7 +330,12 @@ session_start();
                                     <button class="login100-form-btn" name="login">
                                         <strong>Login</strong>
                                     </button>
+                                    <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-top:10px;"> Remember me
+                                  </label>
                                 </div>
+                                <button type="button" class="cancelbtn" style="margin-top: 10px;   padding: 0px 10px; background-color:antiquewhite">Cancel</button>
+
                             </div>
 
                             <div class="txt1 text-center" style="padding: 10px;">
