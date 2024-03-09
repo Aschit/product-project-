@@ -34,7 +34,7 @@ else
 <?php include 'admin_header.php'; ?>
 
 <section class="dashboard">
-    <h1 class="heading" style="font-size: 30px; color: #333; margin-top: 20px; font-weight: bold;"> Users
+    <h1 class="heading" style="font-size: 30px; color: #333; margin-top: 20px; font-weight: bold;text-align:center;"> Users
         Details</h1>
     <div1 class="col-md-12">
         <div1>

@@ -33,10 +33,8 @@ hr.message-inner-separator
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-6">
-                <div class="alert alert-success">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
-                        ×</button>
-                   <span class="glyphicon glyphicon-ok"></span> <strong>Success Message</strong>
+                <div class="alert alert-warning">
+                        <i class="bi bi-check-circle"></i> <strong>Success Message</strong>
                     <hr class="message-inner-separator">
                     <p>
                         Email has been send  !  Kindly check your email inbox or spam.  <i class="fas fa-envelope" style="color: black;"></i></p>

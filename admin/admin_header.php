@@ -15,14 +15,49 @@
     var body = document.getElementsByTagName('body')[0];
     body.classList.toggle('dark-theme');
   }
+  // Function to display morning or evening greeting
+  function displayGreeting() {
+    var now = new Date();
+    var hour = now.getHours();
+    var greetingMsg = document.getElementById('greeting');
+
+    if (hour >= 0 && hour < 12) {
+      greetingMsg.textContent = "Good morning!";
+    } else {
+      greetingMsg.textContent = "Good evening!";
+    }
+    greetingMsg.classList.add('animate__animated', 'animate__bounceIn');
+
+  }
+  // Call the function when the page loads
+  window.onload = displayGreeting;
+
 </script>
 <style>
 body {
     transition: background-color 0.4s ease;
   }
   .dark-theme {
-    background-color: #DBE9FA;
-    color: #008374;
+    background-color: #E9967A;
+    color: #E9967A;
+  }
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .animate__bounceIn {
+    animation-name: bounceIn;
+    animation-duration: 1s;
   }
 </style>
 <!-- header section ends -->
@@ -37,6 +72,9 @@ body {
     <div class="profile">
     <img src="../images/dashboard/admin.jpg">
         <a href="main.php" class="btn"><?php echo $_SESSION['username']; ?></a>
+        <div id="greeting" style="margin-top: 10px; font-size:20px;"></div>
+
+
     </div>
 
     <nav class="navbar">

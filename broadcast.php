@@ -23,18 +23,15 @@ if(!isset($_SESSION['username']))
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-     <link rel="stylesheet" href="css/broadcast.css">
-     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
 
 </head>
 
@@ -47,6 +44,52 @@ if(!isset($_SESSION['username']))
   }
   ); 
      </script>
+     
+     <style>
+    .checked {
+        color: orange;
+    }
+    body {
+    background-color: #DCDCDC;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#contact {
+    padding: 60px 0;
+}
+
+#contact h2 {
+    color: paleturquoise;
+    color: #be6231;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+.container form textarea {
+    width: 60%;
+}
+
+
+.footer {
+    background-color: #212529;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #005c5c;
+}
+
+    </style>
 
 
 
@@ -74,7 +117,7 @@ if(!isset($_SESSION['username']))
                 <h3 style="font-size: 15px; font-family: Arial, sans-serif;">Live  Now 🔴</h3>
                 <div class="livebox" style="background-color: #fff;">
                     <a href="<?php echo $value; ?>">
-                        <video src="<?php echo $value; ?>" alt="HNP" width="70%" ; controls>
+                        <video src="<?php echo $value; ?>" alt="HNP" width="70%" ; controls autoplay muted loop>
                             <source src="<?php echo $value; ?>" type="video/mp4">
                             <source src="<?php echo $value; ?>" type="video/ogg">
                         </video>
@@ -105,8 +148,7 @@ if(!isset($_SESSION['username']))
             ?>
                 <h3
                     style="color: black; font-size: 22px; margin-right: 50px; margin-top: 100px; margin-bottom: 15px; font-family: Arial, sans-serif;">
-                    Usain Bolt 🆚 Marcell
-                    Jacobs - 100m _ Head-to-head</h3>
+                    Raymond Martin blazes to gold in 100m, keeps streak alive with 10th career medal</h3>
                 <h3 style="font-size: 15px; font-family: Arial, sans-serif;">Live Now 🔴</h3>
                 <div class="livebox" style="background-color: #fff;">
                     <a href="<?php echo $value; ?>">
@@ -140,7 +182,7 @@ if(!isset($_SESSION['username']))
         ?>
                 <h3
                     style="color: black; font-size: 22px; margin-right: 50px; margin-top: 100px; margin-bottom: 15px; font-family: Arial, sans-serif;">
-                    Nepal 0-2 India _ Live_Game_Yokyo FunOympic 2024</h3>
+                    Nepal 0-2 India _ Live_Game_ FunOympic 2024</h3>
                 <h3 style="font-size: 15px; font-family: Arial, sans-serif;"></i>Live Now 🔴</h3>
                 <div class="livebox" style="background-color: #fff;">
                     <a href="<?php echo $value; ?>">
@@ -174,7 +216,7 @@ if(!isset($_SESSION['username']))
         ?>
                 <h3
                     style="color: black; font-size: 22px; margin-right: 50px; margin-top: 100px; margin-bottom: 15px; font-family: Arial, sans-serif;">
-                   (Live Game) Omanyala dominates the men's 100m _ Continental Tour Gold 2024</h3>
+                    Olympic Race - Swimming Men's 4x100m</h3>
                 <h3 style="font-size: 15px; font-family: Arial, sans-serif;">Live Now 🔴</h3>
                 <div class="livebox" style="background-color: #fff;">
                     <a href="<?php echo $value; ?>">
@@ -211,9 +253,9 @@ if(!isset($_SESSION['username']))
                     style="width: 60%;">
             </div>
             <button type="submit" name="submit"
-                style="border-radius: 5px; padding: 7px; color: #fff; background-color: #008374;">Submit</button>
+                style="border-radius: 5px; padding: 7px; color: #fff; background-color: red;">Submit</button>
             <button type="reset"
-                style="border-radius: 5px; padding: 7px; color: #fff; background-color: #008374;">Cancel</button>
+                style="border-radius: 5px; padding: 7px; color: #fff; background-color: gray;">Cancel</button>
         </form>
         <?php
   if(isset($_POST['submit']))
@@ -255,7 +297,7 @@ if(!isset($_SESSION['username']))
             <div class="row" style="margin: 40px 0px; margin-top: -20px;">
                 <div class="col-sm-8">
                     <div class="username"
-                        style="text-transform:uppercase; font-size: 16px; font-weight: bold; color: #008374;">
+                        style="text-transform:uppercase; font-size: 16px; font-weight: bold; color: #740083;">
                         <?php echo $username; ?>
 
                         <?php

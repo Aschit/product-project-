@@ -72,6 +72,7 @@ else
                 $image_tmp=$_FILES['image']['tmp_name'];
                 $query="insert into posts(title,content,image)values('$title','$content','$image_name')";
                 $run=mysqli_query($conn,$query);
+                move_uploaded_file("$image_tmp","../images/news/$image_name");
                 if($run)
                 {
                     echo "<script>window.alert('Post Added Successfully!')</script>";

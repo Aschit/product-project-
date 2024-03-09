@@ -30,93 +30,21 @@ else
 
 </head>
 
-<style>
-    body {
-    font-family: 'Arial', sans-serif;
-    background-color: paleturquoise;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar {
-    background-color: pink;
-}
-
-.container-login100 {
-    background-color: #DCDCDC;
-}
-
-.container-update {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
-    background-color: #fff;
-    padding: 50px 30px;
-    border-radius: 7px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-h3 {
-    margin-top: -10px;
-    text-align: center;
-    color: #008374;
-    font-family: Arial, sans-serif;
-}
-
-.form-group {
-    margin-bottom: 20px;
-    background-color: whitesmoke;
-}
-
-label {
-    font-size: 18px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    margin-top: 5px;
-    font-size: 16px;
-}
-
-.btn-info {
-    font-size: 18px;
-    padding: 10px;
-    width: 100%;
-    margin-top: 20px;
-    background-color: #008374;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.btn-info:hover {
-    background-color: #00695c;
-}
-
-</style>
 
 <body>
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: pink;">
-        <a class="navbar-brand" href="main.php">Click to Go Dashboard.</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-        </div>
-    </nav>
+    <ul class="navbar navbar-light bg-light" style="font-size: 15px; padding: 0.5rem 1rem">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="main.php">Click to Go Dashboard</a>
+  </li>
+    </ul>
+    
     <!-- navbar end -->
     <!-- dashboard start -->
     <div class="limiter">
         <div class="container-login100" style="background-color: #DCDCDC;">
             <div
                 style="width: 50%; margin: 0 auto; margin-top: 20px; background-color: #CCF381; padding: 50px 30px; border-radius: 7px;">
-                <h3 style="margin-top: -10px; text-align: center; color: #008374; font-family: Arial, sans-serif;">
+                <h3 style="margin-top: -10px; text-align: center; color: #000D0B; font-family: Arial, sans-serif;">
                     <strong>UPDATE USER</strong>
                 </h3>
                 <form action="update-user.php" method="get" enctype="multipart/form-data">
@@ -162,7 +90,7 @@ input {
                             aria-describedby="helpId" value="<?php echo $_GET['sports']; ?>">
                     </div>
                     <!-- submit button -->
-                    <button type="submit" class="btn btn-info btn-lg" name="submit">Update User</button>
+                    <button type="submit" class="btn btn-info btn-lg" name="submit">Confirm</button>
                 </form>
             </div>
         </div>

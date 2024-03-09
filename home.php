@@ -1,3 +1,14 @@
+<?php
+// Start the session
+session_start();
+
+// Check if the username is set in the session
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,6 +50,23 @@
 .navbar .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
+    .dropdown-divider {
+        margin: 5px 0;
+        border-top: 1px solid #ced4da; /* Border color */
+    }
+    .dropdown-menu a:hover {
+        background-color: #f8f9fa; /* Change background color on hover */
+    }
+    
+
+
+    
+
+   
+    
+
+    
+
 
 
 </style>
@@ -68,9 +96,7 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <!-- <a class="nav-link" href="about.php">About</a> -->
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="broadcast.php">Live</a>
         </li>
@@ -92,15 +118,19 @@
           <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="login.php">Login</a></li>
             <li><a class="dropdown-item" href="register.php">SignIn</a></li>
-            <li><a class="dropdown-item" href="logout.php">LogOut</a></li>
           </ul>
         </li>
       </ul> 
-      <a href="profile.php" class="nav-link"  style="color: red; font-size:25px;">User</a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <div class="nav-item dropdown" style="margin-left:100px; font-size:25px;text-transform:capitalize;color:#e60000;">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <?php echo $username; ?>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                    </ul>    
     </div>
   </div>
 

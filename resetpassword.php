@@ -34,23 +34,23 @@ include 'config/connection.php';
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="index.php" class="logo d-flex align-items-center">
                
-                <h1>olyampic<span>.</span></h1>
+                <h1> Payris Fun olyampic<span>.</span></h1>
             </a>
         </div>
     </header>
     <br>
     <main class="login-form">
-        <div class="cotainer">
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card">
-                        <div class="card-header" style="padding: 15px; background-color: #008374; color: white; font-size: 18px;">
+                        <div class="card-header" style="padding: 15px; background-color: #FF00FF; color: white; font-size: 18px;">
                             <strong>Change Password</strong>
                         </div>
                         <div class="card-body">
                             <form action="#" method="POST" name="login">
                                 <div class="form-group row">
-                                    <p style="font-size: 16px; color: #808080;">Please create a strong new password that you
+                                    <p style="font-size: 16px; color: red;">Please create a strong new password that you
                                         don't use on any other sites.</p>
                                     <div class="col-md-12">
                                         <label for="password" class="col-md-4 col-form-label text-md-right">New
@@ -78,7 +78,7 @@ include 'config/connection.php';
 
                                 </div>
                                 <input type="submit" value="Change" name="reset"
-                                    style="background-color: #008374; color: white; padding: 6px 20px; margin-top: 20px; border-radius: 5px;">
+                                    style="background-color: red; color: white; padding: 6px 20px; margin-top: 20px; border-radius: 5px;">
                         </div>
                         </form>
                     </div>

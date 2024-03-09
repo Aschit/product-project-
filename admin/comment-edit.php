@@ -30,7 +30,7 @@ else
     
     <style>
     body {
-        background-color: #DCDCDC;
+        background-color: #c6e2ff;
     }
 
     .container-login100 {
@@ -57,22 +57,17 @@ else
 </head>
 
 <body>
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgba(255, 99, 71, 0.5);">
-        <a class="navbar-brand" href="main.php" style="margin-left:600px;"> payris Fun Olyampics 2024</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-        </div>
-    </nav>
+    <ul class="nav justify-content-center" style=" padding: 0.5rem 1rem; font:size 25px; background-color:blanchedalmond;" >
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="main.php">Click to Go Dashboard</a>
+  </li>
+    </ul>
     <!-- navbar end -->
     <!-- dashboard start -->
     <div class="limiter">
-        <div class="container-login100" style="background-color: #DCDCDC;">
+        <div class="container-login100" style="background-color:  #c6e2ff;">
             <div
-                style="width: 50%; margin: 0 auto; margin-top: 20px; background-color: #fff; padding: 50px 30px; border-radius: 7px;">
+                style="width: 50%; margin: 0 auto; margin-top: 20px; background-color: #d3ffce; padding: 50px 30px; border-radius: 7px;">
                 <h3 style="margin-top: -10px; text-align: center; color: #837400; font-family: Arial, sans-serif;">
                     <strong>UPDATE COMMENT</strong>
                 </h3>
@@ -107,7 +102,7 @@ else
                             aria-describedby="helpId" value="<?php echo $_GET['rate']; ?>">
                     </div>
                     <!-- submit button -->
-                    <button type="submit" class="btn bg-info btn-lg" name="submit"  >Update Comment</button>
+                    <button type="submit" class="btn bg-info btn-lg" name="submit"  >Confirm</button>
                 </form>
             </div>
         </div>

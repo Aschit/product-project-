@@ -16,6 +16,8 @@ include 'config/connection.php';
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     
     <style>
     .notification {
@@ -59,17 +61,18 @@ include 'config/connection.php';
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card">
-                        <div class="card-header" style="padding: 15px; background-color: #008374; color: white; font-size: 18px;">
+                        <div class="card-header" style="padding: 15px; background-color: #ff7f50; color: white; font-size: 18px;">
                             <strong>Reset Password</strong>
                         </div>
                         <div class="card-body">
+                        <img src="images/forgot.jpg" alt="logo" style="width: 50px; margin: 0 auto; display: block;">
+
                             <form action="#" method="POST" name="recoverpassword">
                                 <div class="form-group row">
                                     <div class="notification">
                                         <i class="fas fa-info-circle notification-icon"></i>
                                         <span class="notification-text">
-                                            A verification email will be sent to your Mail.
-                                            Please check it to get a link to reset your password.
+                                            Enter your valid email and we will send you a verification lik to reset your password..
                                         </span>
                                     </div>
                                 </div>
@@ -82,7 +85,7 @@ include 'config/connection.php';
                         </div>
                         <div>
                             <input type="submit" value="Reset" name="recover"
-                                style="background-color: #008374; color: white; margin-bottom: 15px; margin-left: 18px; padding: 6px 20px; border-radius: 5px;">
+                                style="background-color: red; color: white; margin-bottom: 15px; margin-left: 18px; padding: 6px 20px; border-radius: 5px;">
                         </div>
                         </form>
                     </div>

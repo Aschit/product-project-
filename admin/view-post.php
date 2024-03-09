@@ -31,10 +31,10 @@ else
 <!-- dashboard start -->
 <?php include 'admin_header.php'; ?>
 <section class="dashboard">
-    <h1 class="heading" style="font-size: 30px; color: #333; margin-top: 20px; font-weight: bold;">Manage News</h1>
+    <h1 class="heading" style="font-size: 30px; color: #333; margin-top: 20px; font-weight: bold; text-align:center;">Manage News</h1>
     <div1>
         <table style="font-size: 15px; border-collapse: collapse; width: 100%; border: 1px solid #000;">
-            <thead style="background-color: #008374;; color: white;">
+            <thead style="background-color: #133337 ; color: white;">
                 <tr>
                     <th>POST ID</th>
                     <th>Title</th>

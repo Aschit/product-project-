@@ -25,10 +25,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
    <link rel="stylesheet" href="css/verify.css">
+   
 
 </head>
 
 <body>
+    
 
     <header id="header" class="header d-flex align-items-center">
 
@@ -39,18 +41,21 @@
     </header>
     <br>
     <main class="login-form">
+
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header"
-                            style="padding: 15px; background-color: #008374; color: white; font-size: 18px;">
+                            style="padding: 15px; background-color: #CCCCFF; color: white; font-size: 18px;">
                             <strong>Enter your OTP</strong>
+                            <div id="timer" style="  margin-top: 15px; text-align: center; font-size: 20px;color:red;"></div>
+
                         </div>
                         <div class="card-body">
                             <form action="#" method="POST">
                                 <div class="col-md-15">
-                                    <label>OTP</label>
+                                    <label>OTP code is send to your provided E-mail:</label>
                                     <input type="text" id="otp" class="form-control" style="margin-top: 7px;"
                                         placeholder="Enter OTP" name="otp_code" required autofocus>
                                 </div>
@@ -66,6 +71,34 @@
         </div>
 
     </main>
+
+    <script>
+         // Timer function
+         function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                    // Redirect after timer expires
+                    window.location.href = "index.php"; // Change this to your desired page
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var fiveMinutes = 60 * 5, // Change 5 to the number of minutes you want
+                display = document.querySelector('#timer');
+            startTimer(fiveMinutes, display);
+        };
+    </script>
 </body>
 
 </html>

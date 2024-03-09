@@ -31,11 +31,11 @@ else
 <?php include 'admin_header.php'; ?>
 
 <section class="dashboard">
-    <h1 class="heading" style="font-size: 30px; color: #333; margin-top: 20px; font-weight: bold;">User Comments</h1>
+    <h1 class="heading" style="font-size: 30px; color: #333; margin-top: 20px; font-weight: bold; text-align:center;">User Comments</h1>
     <div1 class="col-md-12">
         <div1>
             <table style="font-size: 15px; border-collapse: collapse; width: 100%; border: 1px solid #000;">
-                <thead style="background-color: #008374;; color: white;">
+                <thead style="background-color: #999999;">
                     <tr>
                         <th>Comment ID</th>
                         <th>Username</th>
