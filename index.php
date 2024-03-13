@@ -14,7 +14,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
@@ -49,6 +50,12 @@ navbar-nav li a[href="profile.php"] {
 .navbar .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
+.carousel-image-sm {
+  max-width: 100%; 
+  height:700px; 
+  margin: auto; 
+}
+
 
 </style>
 
@@ -56,7 +63,7 @@ navbar-nav li a[href="profile.php"] {
   <div class="loader"></div>
 
   <!-- navbar starts -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-secondary">
     <div class="container-fluid">
       <img src="images/logo.jpg" alt="logo" width="50" height="auto" class="rounded-circle">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,11 +89,13 @@ navbar-nav li a[href="profile.php"] {
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="navbar navbar-dark bg-success" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
   <!-- Carousel Start -->
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <!-- Carousel Indicators -->
@@ -98,21 +107,21 @@ navbar-nav li a[href="profile.php"] {
     <!-- Carousel Inner -->
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="images/slide1.jpg" class="d-block w-100" alt="First Slide">
+        <img src="images/slide1.jpg" class="d-block w-100 carousel-image-sm" alt="First Slide">
         <div class="carousel-caption d-none d-md-block">
           <h5>"Ignite the Spirit: Welcome to Fun Olympic 2024!"</h5>
           <p>The elevation of the mind and soul, overcoming differences between nationalities and cultures, embracing friendship, a sense of solidarity, and fair play; ultimately leading to the contribution towards world peace and the betterment of the world..</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="images/slide2.jpg" class="d-block w-100" alt="Second Slide">
+        <img src="images/slide2.jpg" class="d-block w-100 carousel-image-sm" alt="Second Slide">
         <div class="carousel-caption d-none d-md-block">
           <h5>"Ignite the Spirit: Welcome to Fun Olympic 2024!"</h5>
           <p>The elevation of the mind and soul, overcoming differences between nationalities and cultures, embracing friendship, a sense of solidarity, and fair play; ultimately leading to the contribution towards world peace and the betterment of the world..</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="10000">
-        <img src="images/slide3.jpg" class="d-block w-100" alt="Third Slide">
+        <img src="images/slide3.jpg" class="d-block w-100 carousel-image-sm" alt="Third Slide">
         <div class="carousel-caption d-none d-md-block">
           <h5>"Ignite the Spirit: Welcome to Fun Olympic 2024!"</h5>
           <p>The elevation of the mind and soul, overcoming differences between nationalities and cultures, embracing friendship, a sense of solidarity, and fair play; ultimately leading to the contribution towards world peace and the betterment of the world..</p>

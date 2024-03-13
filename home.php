@@ -1,8 +1,6 @@
 <?php
-// Start the session
 session_start();
 
-// Check if the username is set in the session
 $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
 
 ?>
@@ -52,11 +50,17 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
 }
     .dropdown-divider {
         margin: 5px 0;
-        border-top: 1px solid #ced4da; /* Border color */
+        border-top: 1px solid #ced4da; 
     }
     .dropdown-menu a:hover {
-        background-color: #f8f9fa; /* Change background color on hover */
+        background-color: #f8f9fa; 
     }
+    .carousel-image-sm {
+  max-width: 100%; 
+  height:700px; 
+  margin: auto; 
+}
+
     
 
 
@@ -85,7 +89,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
 
 
     <!-- navbar starts --> 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-warning">
   <div class="container-fluid">
   <img src="images/logo.jpg"  alt="logo" width="50" height="auto" class="rounded-circle">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,25 +98,25 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="broadcast.php">Live</a>
+          <a class="nav-link text-white" href="broadcast.php">Live</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            More
           </a>
           
           <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="news.php">News</a></li>
-            <li><a class="dropdown-item" href="sports.php">Sports</li>
-            <li><a class="dropdown-item" href="contact.php">Contact</a></li>
+            <li><a class="dropdown-item " href="sports.php">Sports</li>
+            <li><a class="dropdown-item " href="contact.php">Contact</a></li>
 
           </ul>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Account
           </a>
           <ul class="dropdown-menu">
@@ -121,8 +125,8 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
           </ul>
         </li>
       </ul> 
-      <div class="nav-item dropdown" style="margin-left:100px; font-size:25px;text-transform:capitalize;color:#e60000;">
-                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="nav-item dropdown" style="margin-left:100px; font-size:25px;text-transform:capitalize;">
+                    <a href="#" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <?php echo $username; ?>
                     </a>
                     <ul class="dropdown-menu">
@@ -148,20 +152,20 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
         <!-- Carousel Inner -->
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000" >
-                <img src="images/highlightgames/home1.jpeg" class="d-block w-100" alt="First Slide">
+                <img src="images/highlightgames/home1.jpeg" class="d-block w-100 carousel-image-sm" alt="First Slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  TOP olyampic Players</h5>
                     <p>Olympic Games, quadrennial athletic festival that is often regarded as the world's foremost sports competition. The ancient Olympic Games ...</p>
                 </div>
             </div>
             <div class="carousel-item"  data-bs-interval="2000">
-                <img src="images/highlightgames/slide2.jpg" class="d-block w-100" alt="Second Slide">
+                <img src="images/highlightgames/slide2.jpg" class="d-block w-100 carousel-image-sm" alt="Second Slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>women Sport</h5>
                     Olympic Games, quadrennial athletic festival that is often regarded as the world's foremost sports competition. The ancient Olympic Games ...                </div>
             </div>
             <div class="carousel-item" data-bs-interval="10000">
-                <img src="images/highlightgames/slide3.jpg" class="d-block w-100" alt="Third Slide">
+                <img src="images/highlightgames/slide3.jpg" class="d-block w-100 carousel-image-sm" alt="Third Slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Nice Game</h5>
                     Olympic Games, quadrennial athletic festival that is often regarded as the world's foremost sports competition. The ancient Olympic Games ...                </div>
