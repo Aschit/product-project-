@@ -31,7 +31,9 @@ if(!isset($_SESSION['username']))
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+        <link rel="icon" href="images/logo.jpg">
+   
 
 </head>
 
@@ -94,6 +96,12 @@ if(!isset($_SESSION['username']))
 
 
     <!-- welcome start -->
+    <div class="container-fluid">
+    <a class="navbar-brand" href="home.php">
+  <img src="images/olyampic logo.png" alt="logo" width="50" height="auto" class="rounded-circle" style="margin-top:30px;">
+  </a>
+
+    </div>
     <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
             <div class="section-header">
@@ -211,12 +219,16 @@ if(!isset($_SESSION['username']))
         <div class="row">
             <div class="col-md-14" style="margin-left: 100px; margin-top: -150px;">
                 <?php
+              include 'config/connection.php';  
         $dir = glob('images/video/{*.mp4}', GLOB_BRACE);
         foreach ($dir as $value) {
+            $video_name = basename($value);
+            $title = isset($_SESSION['uploaded_videos'][$video_name]) ? $_SESSION['uploaded_videos'][$video_name] : 'Untitled';
+
         ?>
                 <h3
                     style="color: black; font-size: 22px; margin-right: 50px; margin-top: 100px; margin-bottom: 15px; font-family: Arial, sans-serif;">
-                    Olympic Race - Swimming Men's 4x100m</h3>
+                    <?php echo $title; ?></h3>
                 <h3 style="font-size: 15px; font-family: Arial, sans-serif;">Live Now 🔴</h3>
                 <div class="livebox" style="background-color: #fff;">
                     <a href="<?php echo $value; ?>">
@@ -240,7 +252,7 @@ if(!isset($_SESSION['username']))
 
     <!-- comment start  -->
     <div class="container" style="margin: 30px 0px; margin-left: 350px;">
-        <h2 class="display-6">Write a comment:</h2>
+        <h2 class="display-6">Top Chat:</h2>
         <form action="" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="content"></label>
@@ -269,7 +281,15 @@ if(!isset($_SESSION['username']))
     $run = mysqli_query($conn, $query);
     
     if($run) {
-        echo "<script>window.open('broadcast.php','_self')</script>";
+    echo "<script>
+    window.onload = function() {
+        setTimeout(function() {
+            alert('Comment added successfully');
+        }, 1000);
+    }
+</script>";
+
+
     } else {
         echo "<script>window.alert('Error Found!')</script>";
     }

@@ -10,7 +10,8 @@
     <title>FunOlympic 2024</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
+    <link rel="icon" href="images/logo.jpg">
+ 
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

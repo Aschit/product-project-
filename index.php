@@ -20,6 +20,7 @@
 
 
   <!-- Favicons -->
+  
   <link rel="icon" href="images/logo.jpg">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -55,6 +56,15 @@ navbar-nav li a[href="profile.php"] {
   height:700px; 
   margin: auto; 
 }
+.block-12 .text {
+    background-color: rgba(0, 0, 0, 0.6); 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: #ffffff; 
+  }
 
 
 </style>
@@ -63,11 +73,11 @@ navbar-nav li a[href="profile.php"] {
   <div class="loader"></div>
 
   <!-- navbar starts -->
-  <nav class="navbar navbar-expand-lg bg-secondary">
+  <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <img src="images/logo.jpg" alt="logo" width="50" height="auto" class="rounded-circle">
+      <img src="images/olyampic logo.png" alt="logo" width="50" height="auto" class="rounded-circle">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -89,10 +99,11 @@ navbar-nav li a[href="profile.php"] {
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="navbar navbar-dark bg-success" type="submit">Search</button>
+          <button class="navbar navbar-dark bg-light" type="submit">Search</button>
         </form>
       </div>
     </div>
+
   </nav>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 
@@ -287,14 +298,14 @@ navbar-nav li a[href="profile.php"] {
       <div class="nonloop-block-13 owl-carousel">
         <div class="item">
           <!-- uses .block-12 -->
-          <div class="block-12" data-aos="flip-left">
+          <div class="block-12" data-aos="flip-left" style="width: 20%;">
             <figure>
               <img src="images/highlightgames/highlight1.jpg" alt="Image" class="img-fluid">
             </figure>
             <div class="text">
               <span class="meta">May 20th 2023</span>
               <div class="text-inner">
-                <h2 class="heading mb-3"><a href="login.php" class="text-black">olyampic</a></h2>
+                <h2 class="heading mb-3" style="text-align: left;"><a href="login.php" class="text-black">olyampic</a></h2>
                 <p>The star of that gold medal-winning Argentina squad was undoubtedly Lionel Messi who recently guided Argentina to Copa America 2021 triumph. This was Messi's first major international trophy with La Albiceleste. Messi's contract with FC Barcelona got over in 2021 but he is very close to sign a fresh five-year contract with the club.</p>
               </div>
             </div>
@@ -302,7 +313,7 @@ navbar-nav li a[href="profile.php"] {
         </div>
 
         <div class="item">
-          <div class="block-12" data-aos="flip-right">
+          <div class="block-12" data-aos="flip-right" style="width: 30%;">
             <figure>
               <img src="images/highlightgames/highlight2.jpg" alt="Image" class="img-fluid">
             </figure>
@@ -317,7 +328,7 @@ navbar-nav li a[href="profile.php"] {
         </div>
 
         <div class="item">
-          <div class="block-12"data-aos="flip-right">
+          <div class="block-12"data-aos="flip-right" style="width: 30%;">
             <figure>
               <img src="images/highlightgames/highlight3.jpg" alt="Image" class="img-fluid">
             </figure>
@@ -332,7 +343,7 @@ navbar-nav li a[href="profile.php"] {
         </div>
 
         <div class="item">
-          <div class="block-12"data-aos="flip-right">
+          <div class="block-12"data-aos="flip-right" style="width: 30%;">
             <figure>
               <img src="images/highlightgames/swimming.jpg" alt="Image" class="img-fluid">
             </figure>
@@ -442,6 +453,14 @@ navbar-nav li a[href="profile.php"] {
 
             </div>
           </div>
+          <div class="social-links" style="text-align:center; padding:10px;margin:10px;">
+                        <a href="" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-318657203%3A1687110829899402&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&ifkv=Af_xneFDlV9ueGO5rZsG3qxeFwlpq7fSu5-bXZ0_Bc7o7vtqBhGBhZ42smZseGSEbbnU6MdCvzi_Yg&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                            class="social-icon google"><i class="fab fa-google"></i></a>
+                    </div>
 
           <div class="container mt-4">
             <div class="copyright">
@@ -459,8 +478,7 @@ navbar-nav li a[href="profile.php"] {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
        
-        <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-shor"></i></a>
-
+        
 
             </body>
 

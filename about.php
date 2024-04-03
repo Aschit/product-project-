@@ -14,9 +14,10 @@
     <script src="js/loader.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="icon" href="images/logo.jpg">
 
   </head>
+
   <body>
   <div class="loader"></div>
   
@@ -28,7 +29,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php">Olyampic</a>
+  <a class="navbar-brand" href="index.php">
+  <img src="images/olyampic logo.png" alt="logo" width="50" height="auto" class="rounded-circle">
+  </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

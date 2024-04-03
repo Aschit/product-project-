@@ -78,6 +78,33 @@ function togglePassword(inputId) {
         toggleButton.innerHTML = "&#x1F441;"; // Eye closed emoji
     }
 }
+//  for toast 
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var form = document.querySelector('form[name="register"]');
+        form.addEventListener("submit", function(event) {
+            var formFields = form.querySelectorAll("input, select");
+            var isFormValid = true;
+            formFields.forEach(function(field) {
+                if (!field.value && field.required) {
+                    isFormValid = false;
+                }
+            });
+            if (!isFormValid) {
+                event.preventDefault(); 
+                showToast(); 
+            }
+        });
+
+        function showToast() {
+            var toast = document.getElementById("toast");
+            toast.classList.remove("hide");
+            setTimeout(function() {
+                toast.classList.add("hide");
+            }, 3000); 
+        }
+    });
+
 
 
 

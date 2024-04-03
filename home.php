@@ -22,6 +22,8 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="icon" href="images/logo.jpg">
+
     
 
     
@@ -42,13 +44,11 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
 .navbar-nav .nav-link {
             font-size: 1.2rem;
 }
-.dropdown-item {
-    font-size: 1.2rem;
-}
-.navbar .nav-item.dropdown:hover .dropdown-menu {
+
+.navbar .nav-item:hover {
     display: block;
 }
-    .dropdown-divider {
+ .dropdown-divider {
         margin: 5px 0;
         border-top: 1px solid #ced4da; 
     }
@@ -60,18 +60,6 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
   height:700px; 
   margin: auto; 
 }
-
-    
-
-
-    
-
-   
-    
-
-    
-
-
 
 </style>
 
@@ -91,7 +79,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
     <!-- navbar starts --> 
     <nav class="navbar navbar-expand-lg bg-warning">
   <div class="container-fluid">
-  <img src="images/logo.jpg"  alt="logo" width="50" height="auto" class="rounded-circle">
+  <img src="images/olyampic logo.png"  alt="logo" width="50" height="auto" class="rounded-circle">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -104,28 +92,19 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
         <li class="nav-item">
           <a class="nav-link text-white" href="broadcast.php">Live</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           More
-          </a>
-          
-          <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="news.php">News</a></li>
-            <li><a class="dropdown-item " href="sports.php">Sports</li>
-            <li><a class="dropdown-item " href="contact.php">Contact</a></li>
-
-          </ul>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Account
-          </a>
-          <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="login.php">Login</a></li>
-            <li><a class="dropdown-item" href="register.php">SignIn</a></li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="news.php">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="sports.php">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contact.php">Contact</a>
+        </li>
           </ul>
         </li>
       </ul> 
-      <div class="nav-item dropdown" style="margin-left:100px; font-size:25px;text-transform:capitalize;">
+      <div class="nav-item dropdown" style="margin-left:800px; font-size:25px;text-transform:capitalize;">
                     <a href="#" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <?php echo $username; ?>
                     </a>
@@ -133,7 +112,8 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
                         <li><a class="dropdown-item" href="profile.php">Profile</a></li>
                         <li><a class="dropdown-item" href="#">Settings</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                        <li><a class="dropdown-item" href="logout.php" onclick="return confirm('Are You sure want to Logout??')"><i
+                class="fas fa-right-from-bracket" style="color:red;"></i><span>logout</span></a></li>
                     </ul>    
     </div>
   </div>
@@ -793,6 +773,10 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
                         </form>
                     </div>
                     <!-- End Contact Form -->
+                    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+       
+
 
                 </div>
 

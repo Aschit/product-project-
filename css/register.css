@@ -87,6 +87,25 @@ body {
     color: #c43131;
 }
 
+    .toast {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f44336;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 5px;
+        z-index: 999;
+        display: none;
+    }
+
+    .hide {
+        display: none;
+    }
+
+
+
   
 
 

@@ -34,7 +34,7 @@ else
 
     <section class="dashboard">
 
-        <h1 class="heading">dashboard</h1>
+        <h1 class="heading" style="text-align: center; color:red;">dashboard</h1>
 
         <div class="box-container">
 
@@ -108,7 +108,7 @@ else
     </section>
 
 
-    <?php include 'footer.php'; ?>
+    <!-- <?php include 'footer.php'; ?> -->
 </html>
 <?php
 }

@@ -1,17 +1,32 @@
 <?php
-include 'config/connection.php';
-if(isset($_GET['Del']))
-{
-    $delid=$_GET['Del'];
-    $query="delete from comment where id='$commentId'";
-    $run=mysqli_query($conn,$query);
-    if($run)
-    {
-        header("location:broadcast.php");
+session_start(); 
+
+if (!isset($_SESSION['username'])) {
+    header("location: login.php"); 
+    exit;
+}
+
+if (isset($_GET['id'])) {
+    include 'config/connection.php'; 
+
+    $comment_id = mysqli_real_escape_string($conn, $_GET['id']);
+
+   
+    $query = "DELETE FROM comment WHERE id = '$comment_id'";
+
+    // Execute the query
+    $result = mysqli_query($conn, $query);
+
+    if ($result) {
+      
+        header("Location: broadcast.php"); 
+        exit;
+    } else {
+        
+        echo "Error deleting comment.";
     }
-    else
-    {
-        echo "<script>window.alert('Unable to Delete')</script>";
-    }
+} else {
+    header("Location: broadcast.php");
+    exit;
 }
 ?>

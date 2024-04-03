@@ -41,7 +41,7 @@ alert("User with email already exist!");
                     $mail->SMTPAuth=true;
                     $mail->SMTPSecure='tls';
     
-                      // bishal account
+                      
                    $mail->Username='aschitdhakal@gmail.com';
                    $mail->Password='dhcd uqkx wxvi vlya';
     
@@ -98,13 +98,20 @@ window.location.replace('verification.php');
 
 <!-- js function -->
 <script src="js/main.js"></script>
+<link rel="icon" href="images/logo.jpg">
+
 
 <link rel="stylesheet" href="css/register.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Register</title>
 
+
+
 </head>
 <body>
+<div id="toast" class="toast hide">Please fill all the form fields!</div>
+
+
     <!-- header section begins --> 
     <div class="limiter">
         <div class="container-login100" style="background-image:url('images/signup.jpg'); ">
@@ -207,7 +214,7 @@ window.location.replace('verification.php');
                             <select id="usertype" name="role" required
                                 style="width: 100%; height: 40px; margin-top: 5px; padding: 5px">
                                 <option value="" selected disabled>Select</option>
-                                <option value="administrator">Admin</option>
+                                <!-- <option value="administrator">Admin</option> -->
                                 <option value="user">User</option>
                             </select>
         </div>
@@ -240,10 +247,7 @@ window.location.replace('verification.php');
         </div>
     </div>
     <br>
-
-
     
-
     
 </body>
 </html>

@@ -43,9 +43,16 @@ else
             <div class="form-group">
                 <label for="select" style="font-size: 18px;">Select Video:</label>
                 <br><br>
+            <label style="font-size: 20px;">Title:</label>
+                  <br>
+                  <input type="text" name="title" id="title" class="form-control form-control-lg" placeholder="Write title here"
+            aria-describedby="helpId" required
+            style="border: 1px solid #ccc; height: 40px; width: 800px; padding: 10px; font-size:20px"></input>
+            
                 <input type="file" class="form-control-file" style="font-size: 18px; padding: 7px 1px;" name="video"
                     id="video" placeholder="Upload Video" aria-describedby="fileHelpId">
             </div>
+            
             <button type="submit" class="btn btn-primary" name="submit"
                 style="font-size: 20px; padding: 10px; width: 100px;">Upload</button>
             <button type="reset" class="btn btn-danger"
@@ -55,12 +62,16 @@ else
         <?php
             if(isset($_POST['submit']))
             {
+                $title = $_POST['title'];
+                $_SESSION['video_title'] = $title;
                 $video_name=$_FILES['video']['name'];
                 $video_type=$_FILES['video']['type'];
                 $video_tmp=$_FILES['video']['tmp_name'];
                 move_uploaded_file("$video_tmp","../images/video/$video_name");
                 echo "File uploaded successfully!"."<br>";
                 echo "$video_name";
+
+                $_SESSION['uploaded_videos'][$video_name] = $title;
             }
             ?>
         </div>

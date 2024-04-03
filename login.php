@@ -13,24 +13,37 @@ session_start();
         } elseif (empty($password)) {
             $login_error = '<p style="text-align: center; color: #FF0000; margin-right: 240px; font-size: 16px;"><i class="fas fa-exclamation-circle"></i> Please enter your password.</p>';
         } else {
+
+              // Default admin credentials
+        $default_admin_username = "admin";
+        $default_admin_password = "password";
+
+        if ($username === $default_admin_username && $password === $default_admin_password) {
+            // Default admin credentials matched, redirect to admin panel
+            $_SESSION['username'] = $username;
+            header("Location: admin/main.php");
+            exit();
+
+        } else {
+
             // Process login non-empty username and password
             $sql = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username' AND role = 'administrator'");
             $count = mysqli_num_rows($sql);
     
-            if ($count > 0) {
-                $fetch = mysqli_fetch_assoc($sql);
-                $hashpassword = $fetch["password"];
+            // if ($count > 0) {
+            //     $fetch = mysqli_fetch_assoc($sql);
+            //     $hashpassword = $fetch["password"];
     
-                if ($fetch["status"] == 0) {
-                    $login_error = '<p style="text-align: center; color: #FF0000; margin-right: 100px; font-size: 16px;"><i class="fas fa-exclamation-circle"></i> Please verify your email account before logging in.</p>';
-                } elseif (password_verify($password, $hashpassword)) {
-                    $_SESSION['username'] = $username;
-                    header("Location: admin/main.php");
-                    exit();
-                } else {
-                    $login_error = '<p style="text-align: center; margin-right: 110px; color: #FF0000; font-size: 16px;"><i class="fas fa-exclamation-circle"></i> Invalid username or password, please try again.</p>';
-                }
-            } else {
+            //     if ($fetch["status"] == 0) {
+            //         $login_error = '<p style="text-align: center; color: #FF0000; margin-right: 100px; font-size: 16px;"><i class="fas fa-exclamation-circle"></i> Please verify your email account before logging in.</p>';
+            //     } elseif (password_verify($password, $hashpassword)) {
+            //         $_SESSION['username'] = $username;
+            //         header("Location: admin/main.php");
+            //         exit();
+            //     } else {
+            //         $login_error = '<p style="text-align: center; margin-right: 110px; color: #FF0000; font-size: 16px;"><i class="fas fa-exclamation-circle"></i> Invalid username or password, please try again.</p>';
+            //     }
+            // } else {
                 $sql1 = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username' AND role = 'user'");
                 $count1 = mysqli_num_rows($sql1);
     
@@ -71,6 +84,8 @@ session_start();
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link rel="icon" href="images/logo.jpg">
+
 <style>
     
     body {
@@ -268,6 +283,8 @@ session_start();
         <span></span>
 
 		<div class="navbar-header">
+        <img src="images/olyampic logo.png" alt="logo" width="50" height="auto" class="rounded-circle">
+
 			<a class="navbar-brand" href="index.php" >Login to  Payris FunOlyampics2024</a>
 		</div>
 		<ul class="nav justify-content-end">

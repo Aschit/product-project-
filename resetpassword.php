@@ -25,6 +25,10 @@ include 'config/connection.php';
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="icon" href="images/logo.jpg">
+
+
         <script src="js/resetpassword.js"></script>
 </head>
 
@@ -72,11 +76,10 @@ include 'config/connection.php';
                                             style="display: none; color: red; margin-top: 10px;">Password donot
                                             match.</i>
                                     </div>
-
-                                    
-                                   
+                                  
 
                                 </div>
+
                                 <input type="submit" value="Change" name="reset"
                                     style="background-color: red; color: white; padding: 6px 20px; margin-top: 20px; border-radius: 5px;">
                         </div>
